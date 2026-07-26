@@ -6,10 +6,6 @@ const nextConfig = {
     externalDir: true,
   },
 
-  turbopack: {
-    root: path.join(__dirname),
-  },
-
   images: {
     remotePatterns: [
       {
