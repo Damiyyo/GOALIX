@@ -47,7 +47,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 1.20,
 
-    bookingCode: "GXPL001",
+    bookingCode: "",
 
     kickoff: "2026-08-15T17:30:00",
 
