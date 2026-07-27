@@ -1,8 +1,9 @@
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
-import cookieParser from "cookie-parser";
 import cors from "cors";
+import cookieParser from "cookie-parser";
+
 import testRoutes from "./routes/testRoutes";
 import connectDB from "./database/db";
 import authRoutes from "./routes/authRoutes";
@@ -20,24 +21,8 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://goalix-km3e.vercel.app",
-];
-
-app.use(
-  cors({
-    origin(origin, callback) {
-      // Allow requests with no Origin (e.g. Postman, server-to-server)
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-
-      return callback(new Error("Not allowed by CORS"));
-    },
-    credentials: true,
-  })
-);
+  process.env.CLIENT_URL,
+].filter(Boolean);
 
 app.use(cookieParser());
 
