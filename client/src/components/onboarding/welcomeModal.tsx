@@ -22,37 +22,49 @@ const GoalixWelcomeModal = ({
 
   return (
     <div
-      className="
-        fixed
-        inset-0
-        z-[999]
+  className="
+    fixed
+    inset-0
+    z-[999]
 
-        flex
-        items-center
-        justify-center
+    overflow-y-auto
 
-        bg-black/70
+    bg-black/70
 
-        backdrop-blur-md
-      "
-    >
-      <div
-        className="
-          w-full
-          max-w-2xl
+    backdrop-blur-md
 
-          rounded-[36px]
+    p-4
+  "
+>
+  <div
+    className="
+      flex
+      min-h-full
+      items-center
+      justify-center
+    "
+  >
+    <div
+  className="
+    w-full
+    max-w-2xl
 
-          border
-          border-white/10
+    rounded-[36px]
 
-          bg-[#111111]
+    border
+    border-white/10
 
-          p-8
+    bg-[#111111]
 
-          text-white
-        "
-      >
+    p-8
+
+    text-white
+
+    max-h-[90vh]
+
+    overflow-y-auto
+  "
+>
         {/* HEADER */}
 
         <div className="flex items-center gap-4">
@@ -197,6 +209,7 @@ const GoalixWelcomeModal = ({
         <div
           className="
             mt-10
+            pb-4
 
             flex
             flex-col
@@ -350,6 +363,7 @@ const GoalixWelcomeModal = ({
             )}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
