@@ -103,10 +103,10 @@ export const registerUser = async (
 /* LOGIN USER */
 /* ====================================== */
 
-export const loginUser = async (
-  req: Request,
-  res: Response
-) => {
+export const loginUser = async (req: Request, res: Response) => {
+
+  console.log("JWT_SECRET exists:", !!process.env.JWT_SECRET);
+
   try {
     const {
       email,
@@ -191,11 +191,13 @@ const token = jwt.sign(
         role,
       },
     });
-  } catch (error) {
+  } catch (error: any) {
+    console.error("LOGIN ERROR:");
     console.error(error);
-
+    console.error(error?.stack);
+  
     return res.status(500).json({
-      message: "Server error",
+      message: error?.message || "Server error",
     });
   }
 };
