@@ -23,21 +23,17 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  process.env.CLIENT_URL,
-].filter(Boolean);
+  "https://goalix-lovat.vercel.app",
+];
 
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true);
-
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error(`Origin ${origin} not allowed by CORS`));
       }
-
-      return callback(
-        new Error(`Origin ${origin} not allowed by CORS`)
-      );
     },
     credentials: true,
   })
