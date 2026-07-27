@@ -588,7 +588,7 @@ const FPLHub = () => {
         "
       >
         <Link
-          href="https://fantasy.premierleague.com/leagues/auto-join/gt61wu"
+          href="https://fantasy.premierleague.com/leagues/auto-join/qknq5z"
           target="_blank"
           rel="noopener noreferrer"
           className="
