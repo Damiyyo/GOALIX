@@ -1,9 +1,8 @@
 import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
-import cors from "cors";
 import cookieParser from "cookie-parser";
-
+import cors from "cors";
 import testRoutes from "./routes/testRoutes";
 import connectDB from "./database/db";
 import authRoutes from "./routes/authRoutes";
@@ -18,8 +17,6 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-
-import cors from "cors";
 
 const allowedOrigins = [
   "http://localhost:3000",
