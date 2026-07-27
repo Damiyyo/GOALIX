@@ -118,179 +118,99 @@ const RecentPredictions = () => {
         </Link>
       </div>
 
-      {/* Table */}
-      <div className="mt-10 overflow-x-auto">
-        <table className="w-full">
-          <thead>
-            <tr
-              className="
-                border-b
-                border-white/10
-              "
-            >
-              <th
-                className="
-                  pb-5
-                  text-left
-                  text-sm
-                  font-semibold
-                  text-zinc-500
-                "
-              >
-                Match
-              </th>
+      {/* ====================== */}
+{/* DESKTOP TABLE */}
+{/* ====================== */}
 
-              <th
-                className="
-                  pb-5
-                  text-left
-                  text-sm
-                  font-semibold
-                  text-zinc-500
-                "
-              >
-                Prediction
-              </th>
+<div className="mt-10 hidden overflow-x-auto md:block">
+  <table className="w-full">
+    {/* Paste your CURRENT table here */}
+  </table>
+</div>
 
-              <th
-                className="
-                  pb-5
-                  text-left
-                  text-sm
-                  font-semibold
-                  text-zinc-500
-                "
-              >
-                Confidence
-              </th>
+{/* ====================== */}
+{/* MOBILE CARDS */}
+{/* ====================== */}
 
-              <th
-                className="
-                  pb-5
-                  text-left
-                  text-sm
-                  font-semibold
-                  text-zinc-500
-                "
-              >
-                Score
-              </th>
+<div className="mt-8 space-y-4 md:hidden">
+  {predictions.map((prediction, index) => (
+    <div
+      key={index}
+      className="
+        rounded-3xl
+        border border-white/10
+        bg-[#181818]
+        p-5
+      "
+    >
+      <div className="flex items-center justify-between">
+        <h3 className="text-base font-bold text-white">
+          {prediction.home}
+        </h3>
 
-              <th
-                className="
-                  pb-5
-                  text-left
-                  text-sm
-                  font-semibold
-                  text-zinc-500
-                "
-              >
-                Status
-              </th>
-            </tr>
-          </thead>
+        <span className="text-zinc-500">
+          vs
+        </span>
 
-          <tbody>
-            {predictions.map(
-              (prediction, index) => (
-                <tr
-                  key={index}
-                  className="
-                    border-b
-                    border-white/5
-                  "
-                >
-                  {/* Match */}
-                  <td
-                    className="
-                      py-6
-
-                      text-sm
-                      font-semibold
-                      text-white
-                    "
-                  >
-                    {prediction.home} vs{" "}
-                    {prediction.away}
-                  </td>
-
-                  {/* Prediction */}
-                  <td
-                    className="
-                      py-6
-                      text-sm
-                      text-zinc-300
-                    "
-                  >
-                    {prediction.prediction}
-                  </td>
-
-                  {/* Confidence */}
-                  <td className="py-6">
-                    <div
-                      className="
-                        inline-flex
-
-                        rounded-full
-                        bg-green-500/10
-
-                        px-4 py-2
-                      "
-                    >
-                      <span
-                        className="
-                          text-xs
-                          font-bold
-                          text-green-400
-                        "
-                      >
-                        {prediction.confidence}
-                      </span>
-                    </div>
-                  </td>
-
-                  {/* Score */}
-                  <td
-                    className="
-                      py-6
-                      text-sm
-                      font-semibold
-                      text-white
-                    "
-                  >
-                    {prediction.score}
-                  </td>
-
-                  {/* Status */}
-                  <td className="py-6">
-                    <div
-                      className={`
-                        inline-flex rounded-full px-4 py-2
-
-                        ${
-                          prediction.status ===
-                          "Won"
-                            ? "bg-green-500/10 text-green-400"
-                            : "bg-red-500/10 text-red-400"
-                        }
-                      `}
-                    >
-                      <span
-                        className="
-                          text-xs
-                          font-bold
-                        "
-                      >
-                        {prediction.status}
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              )
-            )}
-          </tbody>
-        </table>
+        <h3 className="text-base font-bold text-white">
+          {prediction.away}
+        </h3>
       </div>
+
+      <div className="mt-5 grid grid-cols-2 gap-4">
+        <div>
+          <p className="text-xs uppercase tracking-wide text-zinc-500">
+            Prediction
+          </p>
+
+          <p className="mt-1 font-semibold">
+            {prediction.prediction}
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-wide text-zinc-500">
+            Confidence
+          </p>
+
+          <div className="mt-2 inline-flex rounded-full bg-green-500/10 px-3 py-1">
+            <span className="text-xs font-bold text-green-400">
+              {prediction.confidence}
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-wide text-zinc-500">
+            Score
+          </p>
+
+          <p className="mt-1 font-semibold text-white">
+            {prediction.score}
+          </p>
+        </div>
+
+        <div>
+          <p className="text-xs uppercase tracking-wide text-zinc-500">
+            Status
+          </p>
+
+          <div
+            className={`mt-2 inline-flex rounded-full px-3 py-1 ${
+              prediction.status === "Won"
+                ? "bg-green-500/10 text-green-400"
+                : "bg-red-500/10 text-red-400"
+            }`}
+          >
+            <span className="text-xs font-bold">
+              {prediction.status}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
     </section>
   );
 };
