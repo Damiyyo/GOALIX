@@ -19,12 +19,32 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 
+app.use(express.json());
+
 const allowedOrigins = [
   "http://localhost:3000",
   process.env.CLIENT_URL,
 ].filter(Boolean);
 
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(
+        new Error(`Origin ${origin} not allowed by CORS`)
+      );
+    },
+    credentials: true,
+  })
+);
+
 app.use(cookieParser());
+
 
 // Routes
 app.use("/api/test", testRoutes);
