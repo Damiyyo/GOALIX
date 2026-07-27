@@ -167,22 +167,6 @@ const LoginPage = () => {
             }
           />
 
-          {/* Forgot Password */}
-
-          <div className="mt-3 flex justify-end">
-            <Link
-              href="/forgot-password"
-              className="
-                text-sm
-                text-green-400
-                transition-all
-                duration-300
-                hover:text-green-300
-              "
-            >
-              Forgot Password?
-            </Link>
-          </div>
 
           {/* Login Button */}
 
