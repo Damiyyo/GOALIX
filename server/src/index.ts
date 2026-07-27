@@ -19,9 +19,25 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 
+import cors from "cors";
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://goalix-km3e.vercel.app",
+];
+
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin(origin, callback) {
+      // Allow requests with no Origin (e.g. Postman, server-to-server)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("Not allowed by CORS"));
+    },
     credentials: true,
   })
 );
