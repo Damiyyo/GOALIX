@@ -130,6 +130,10 @@ export const loginUser = async (req: Request, res: Response) => {
         email,
       });
 
+      console.log("Login email:", email);
+console.log("User found:", !!user);
+
+
     if (!user) {
       return res.status(400).json({
         message:
@@ -146,6 +150,8 @@ export const loginUser = async (req: Request, res: Response) => {
         user.password
       );
 
+      console.log("Password matches:", isMatch);
+      
     if (!isMatch) {
       return res.status(400).json({
         message:
