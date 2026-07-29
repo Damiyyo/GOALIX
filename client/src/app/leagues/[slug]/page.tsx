@@ -7,13 +7,6 @@ import { leagueTables } from "@/data/leagues";
 import LeagueHeader from "@/data/leagues/LeagueHeader";
 import LeagueTable from "@/data/leagues/LeagueTable";
 
-import ComingSoonLeaguePage from "@/components/leagues/ComingSoonLeaguePage";
-
-const comingSoonCompetitions = [
-  "champions-league",
-  "europa-league",
-  "conference-league",
-];
 
 export default async function LeaguePage({
   params,
@@ -22,19 +15,6 @@ export default async function LeaguePage({
 }) {
   const { slug } = await params;
 
-  // ==========================
-  // UEFA COMPETITIONS
-  // ==========================
-
-  if (
-    comingSoonCompetitions.includes(slug)
-  ) {
-    return (
-      <ComingSoonLeaguePage
-        slug={slug}
-      />
-    );
-  }
 
   // ==========================
   // NORMAL LEAGUES

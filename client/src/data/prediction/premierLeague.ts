@@ -49,7 +49,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "",
 
-    kickoff: "2026-08-15T17:30:00",
+    kickoff: "2026-08-21T20:00:00",
 
     status: "published",
   },
@@ -75,7 +75,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "",
 
-    kickoff: "2026-08-16T14:00:00",
+    kickoff: "2026-08-22T15:00:00",
 
     status: "published",
   },
@@ -101,7 +101,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "",
 
-    kickoff: "2026-08-16T16:30:00",
+    kickoff: "2026-08-23T14:00:00",
 
     status: "published",
   },
@@ -127,7 +127,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "",
 
-    kickoff: "2026-08-17T20:00:00",
+    kickoff: "2026-08-22T12:30:00",
 
     status: "published",
   },
@@ -153,7 +153,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "GXPL005",
 
-    kickoff: "2026-08-18T19:45:00",
+    kickoff: "2026-08-22T15:00:00",
 
     status: "published",
   },
@@ -179,7 +179,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "GXPL005",
 
-    kickoff: "2026-08-18T19:45:00",
+    kickoff: "2026-08-22T15:00:00",
 
     status: "published",
   },
@@ -205,7 +205,8 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "GXPL005",
 
-    kickoff: "2026-08-18T19:45:00",
+    kickoff: "2026-08-22T17:30:00",
+
 
     status: "published",
   },
@@ -231,7 +232,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "GXPL005",
 
-    kickoff: "2026-08-18T19:45:00",
+    kickoff: "2026-08-23T14:00:00",
 
     status: "published",
   },
@@ -257,7 +258,8 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "GXPL005",
 
-    kickoff: "2026-08-18T19:45:00",
+    kickoff: "2026-08-23T16:30:00",
+
 
     status: "published",
   },
@@ -283,7 +285,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "GXPL005",
 
-    kickoff: "2026-08-24T19:45:00",
+    kickoff: "2026-08-24T20:00:00",
 
     status: "published",
   },

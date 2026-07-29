@@ -28,21 +28,21 @@ const leagues = [
     slug: "ligue-1",
     logo: "/leagues/Ligue1_logo.png",
   },
-  // {
-  //   name: "Champions League",
-  //   slug: "Champe",
-  //   logo: "/leagues/Ligue1_logo.png",
-  // },
-  // {
-  //   name: "Europa Conference League",
-  //   slug: "europacon",
-  //   logo: "/leagues/Ligue1_logo.png",
-  // },
-  // {
-  //   name: "Europa League",
-  //   slug: "europa",
-  //   logo: "/leagues/Ligue1_logo.png",
-  // },
+  {
+    name: "Champions League",
+    slug: "Champe",
+    logo: "/leagues/champions.svg",
+  },
+  {
+    name: "Europa Conference League",
+    slug: "europacon",
+    logo: "/leagues/conference.svg.webp",
+  },
+  {
+    name: "Europa League",
+    slug: "europa",
+    logo: "/leagues/europa.svg.webp",
+  },
 ];
 
 export default function LeaguesPage() {

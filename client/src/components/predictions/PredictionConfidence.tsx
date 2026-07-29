@@ -25,62 +25,54 @@ export default function PredictionConfidence({
   return (
     <div>
       {/* HEADER */}
-
-      <div
-        className="
-          mb-3
-
-          flex
-          items-center
-          justify-between
-        "
-      >
+  
+      <div className="mb-2 flex items-center justify-between">
         <p
           className="
-            text-sm
+            text-xs
             font-semibold
-
-            text-zinc-400
+  
+            text-zinc-500
           "
         >
           Confidence
         </p>
-
+  
         <span
           className="
-            text-lg
+            text-base
             font-black
-
+  
             text-white
           "
         >
           {percentage}%
         </span>
       </div>
-
+  
       {/* BAR */}
-
+  
       <div
         className="
-          h-3
+          h-2
           w-full
-
+  
           overflow-hidden
-
+  
           rounded-full
-
+  
           bg-white/10
         "
       >
         <div
           className={`
             h-full
+  
             rounded-full
-
+  
             transition-all
             duration-700
-            ease-out
-
+  
             ${getColor()}
           `}
           style={{
@@ -88,23 +80,23 @@ export default function PredictionConfidence({
           }}
         />
       </div>
-
+  
       {/* LABEL */}
-
+  
       <p
         className="
-          mt-3
-
-          text-xs
-
+          mt-2
+  
+          text-[10px]
+  
           uppercase
-
-          tracking-[0.15em]
-
-          text-zinc-500
+  
+          tracking-[0.12em]
+  
+          text-zinc-600
         "
       >
-        AI Match Confidence
+        AI Confidence
       </p>
     </div>
   );

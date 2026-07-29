@@ -13,7 +13,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 90,
     odds: 1.81,
     bookingCode: "GXBL001",
-    kickoff: "2026-08-16T17:30:00",
+    kickoff: "2026-08-28T20:30:00",
     status: "published",
   },
   {
@@ -27,7 +27,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-29T18:30:00",
     status: "published",
   },
   {
@@ -41,7 +41,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-29T15:30:00",
     status: "published",
   },
   {
@@ -55,7 +55,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-30T15:30:00",
     status: "published",
   },
   {
@@ -69,7 +69,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-30T17:30:00", 
     status: "published",
   },
   {
@@ -83,7 +83,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-29T15:30:00",
     status: "published",
   },
   {
@@ -97,7 +97,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-29T15:30:00",
     status: "published",
   },
   {
@@ -111,7 +111,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-29T15:30:00",
     status: "published",
   },
   {
@@ -125,7 +125,7 @@ export const bundesligaPredictions: PredictionMatch[] = [
     confidence: 86,
     odds: 1.79,
     bookingCode: "GXBL002",
-    kickoff: "2026-08-17T19:30:00",
+    kickoff: "2026-08-29T15:30:00",
     status: "published",
   },
 ];

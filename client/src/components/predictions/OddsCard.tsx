@@ -8,18 +8,12 @@ interface OddsCardProps {
 }
 
 const confidenceColors = (confidence: number) => {
-  if (confidence >= 90)
-    return "text-green-400";
-
-  if (confidence >= 80)
-    return "text-yellow-400";
-
+  if (confidence >= 90) return "text-green-400";
+  if (confidence >= 80) return "text-yellow-400";
   return "text-red-400";
 };
 
-const badgeColors = (
-  title: string
-) => {
+const badgeColors = (title: string) => {
   switch (title) {
     case "Safe Ticket":
       return "bg-green-500/20 text-green-400";
@@ -47,16 +41,11 @@ const badgeColors = (
   }
 };
 
-const OddsCard = ({
-  ticket,
-}: OddsCardProps) => {
-  const [copied, setCopied] =
-    useState(false);
+const OddsCard = ({ ticket }: OddsCardProps) => {
+  const [copied, setCopied] = useState(false);
 
   const copyCode = async () => {
-    await navigator.clipboard.writeText(
-      ticket.code
-    );
+    await navigator.clipboard.writeText(ticket.code);
 
     setCopied(true);
 
@@ -68,201 +57,105 @@ const OddsCard = ({
   return (
     <div
       className="
-        rounded-[30px]
-
+        rounded-2xl
+  
         border border-white/10
-
+  
         bg-[#111111]
-
-        p-7
-
+  
+        p-4
+  
         transition-all
         duration-300
-
-        hover:-translate-y-1
+  
         hover:border-green-500/30
-        hover:shadow-[0_25px_70px_rgba(34,197,94,0.15)]
       "
     >
-      {/* Ticket */}
-
-      <div
-        className="
-          flex
-          items-center
-          justify-between
-        "
-      >
+      {/* HEADER */}
+  
+      <div className="flex items-center justify-between">
         <span
           className={`
             rounded-full
-
-            px-4
-            py-2
-
-            text-xs
-            font-black
-            uppercase
-
-            ${badgeColors(
-              ticket.title
-            )}
+            px-2.5
+            py-1
+  
+            text-[10px]
+            font-bold
+  
+            ${badgeColors(ticket.title)}
           `}
         >
           {ticket.title}
         </span>
-
-        <p
-          className="
-            text-sm
-
-            text-zinc-500
-          "
-        >
-          Goalix AI
-        </p>
-      </div>
-
-      {/* Confidence */}
-
-      <div className="mt-8">
-        <p
-          className="
-            text-sm
-
-            text-zinc-500
-          "
-        >
-          Confidence
-        </p>
-
-        <h2
+  
+        <span
           className={`
-            mt-2
-
-            text-6xl
-
+            text-sm
             font-black
-
-            ${confidenceColors(
-              ticket.confidence
-            )}
+            ${confidenceColors(ticket.confidence)}
           `}
         >
           {ticket.confidence}%
-        </h2>
+        </span>
       </div>
-
-      {/* Odds */}
-
-      <div
-        className="
-          mt-8
-
-          rounded-2xl
-
-          bg-white/[0.04]
-
-          p-5
-        "
-      >
-        <p
-          className="
-            text-sm
-
-            text-zinc-500
-          "
-        >
-          Combined Odds
-        </p>
-
-        <h3
-          className="
-            mt-2
-
-            text-4xl
-
-            font-black
-          "
-        >
-          {ticket.odds}
-        </h3>
+  
+      {/* ODDS */}
+  
+      <div className="mt-4 flex items-end justify-between">
+        <div>
+          <p className="text-xs text-zinc-500">
+            Odds
+          </p>
+  
+          <h2 className="text-2xl font-black">
+            {ticket.odds}
+          </h2>
+        </div>
+  
+        <div className="text-right">
+          <p className="text-xs text-zinc-500">
+            Booking Code
+          </p>
+  
+          <p
+            className="
+              mt-1
+  
+              font-bold
+  
+              text-green-400
+            "
+          >
+            {ticket.code}
+          </p>
+        </div>
       </div>
-
-      {/* Booking */}
-
-      <div
-        className="
-          mt-6
-
-          rounded-2xl
-
-          border border-dashed
-          border-green-500/30
-
-          bg-green-500/10
-
-          p-5
-        "
-      >
-        <p
-          className="
-            text-sm
-
-            text-zinc-500
-          "
-        >
-          Booking Code
-        </p>
-
-        <h2
-          className="
-            mt-3
-
-            break-all
-
-            text-2xl
-
-            font-black
-
-            tracking-[0.3em]
-
-            text-green-400
-          "
-        >
-          {ticket.code}
-        </h2>
-      </div>
-
-      {/* Copy */}
-
+  
+      {/* BUTTON */}
+  
       <button
         onClick={copyCode}
         className="
-          mt-8
-
+          mt-4
+  
           w-full
-
-          rounded-2xl
-
+  
+          rounded-xl
+  
           bg-white
-
-          py-4
-
+  
+          py-2.5
+  
           text-sm
           font-black
-
+  
           text-black
-
-          transition-all
-          duration-300
-
-          hover:scale-[1.02]
         "
       >
         {copied
-          ? "✓ Code Copied"
-          : "Copy Booking Code"}
+          ? "Copied ✓"
+          : "Copy Code"}
       </button>
     </div>
   );

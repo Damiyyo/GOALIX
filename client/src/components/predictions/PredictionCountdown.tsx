@@ -62,22 +62,24 @@ export default function PredictionCountdown({
     return (
       <div
         className="
-          rounded-2xl
+          mt-4
 
-          border
-          border-red-500/20
+          rounded-xl
+
+          border border-red-500/20
 
           bg-red-500/10
 
-          p-4
+          px-4
+          py-3
 
           text-center
         "
       >
         <p
           className="
-            text-sm
-            font-black
+            text-xs
+            font-bold
 
             text-red-400
           "
@@ -91,59 +93,82 @@ export default function PredictionCountdown({
   return (
     <div
       className="
-        rounded-2xl
+        mt-4
 
-        border
-        border-white/10
+        flex
+        items-center
+        justify-between
+
+        rounded-xl
+
+        border border-white/10
 
         bg-white/[0.03]
 
-        p-5
+        px-4
+        py-3
       "
     >
-      <p
-        className="
-          text-xs
+      {/* LEFT */}
 
-          uppercase
+      <div>
+        <p
+          className="
+            text-[10px]
 
-          tracking-[0.15em]
+            uppercase
 
-          text-zinc-500
-        "
-      >
-        Kickoff Countdown
-      </p>
+            tracking-[0.12em]
+
+            text-zinc-500
+          "
+        >
+          Kickoff
+        </p>
+
+        <p
+          className="
+            mt-1
+
+            text-xs
+            font-semibold
+
+            text-green-400
+          "
+        >
+          Starts Soon ⚽
+        </p>
+      </div>
+
+      {/* TIMER */}
 
       <div
         className="
-          mt-4
+          flex
+          items-center
 
-          grid
-          grid-cols-4
-
-          gap-3
+          gap-2
         "
       >
         {[
           {
-            label: "Days",
+            label: "D",
             value: timeLeft.days,
           },
 
           {
-            label: "Hours",
+            label: "H",
             value: timeLeft.hours,
           },
 
           {
-            label: "Minutes",
+            label: "M",
             value:
               timeLeft.minutes,
           },
 
           {
-            label: "Seconds",
+            label: "S",
             value:
               timeLeft.seconds,
           },
@@ -151,61 +176,54 @@ export default function PredictionCountdown({
           <div
             key={item.label}
             className="
-              rounded-xl
-
-              bg-[#1b1b1b]
-
-              py-3
-
-              text-center
+              flex
+              flex-col
+              items-center
             "
           >
-            <h3
+            <div
               className="
-                text-xl
-                font-black
+                flex
 
-                text-white
+                h-9
+                w-9
+
+                items-center
+                justify-center
+
+                rounded-lg
+
+                bg-[#1b1b1b]
               "
             >
-              {String(
-                item.value
-              ).padStart(2, "0")}
-            </h3>
+              <span
+                className="
+                  text-xs
+                  font-black
 
-            <p
+                  text-white
+                "
+              >
+                {String(
+                  item.value
+                ).padStart(2, "0")}
+              </span>
+            </div>
+
+            <span
               className="
                 mt-1
 
-                text-[10px]
-
-                uppercase
-
-                tracking-[0.15em]
+                text-[9px]
 
                 text-zinc-500
               "
             >
               {item.label}
-            </p>
+            </span>
           </div>
         ))}
       </div>
-
-      <p
-        className="
-          mt-4
-
-          text-center
-
-          text-xs
-          font-semibold
-
-          text-green-400
-        "
-      >
-        ⚽ Starts Soon
-      </p>
     </div>
   );
 }
