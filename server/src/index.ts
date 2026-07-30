@@ -10,6 +10,7 @@ import authRoutes from "./routes/authRoutes";
 import userRoutes from "./routes/userRoutes";
 import adminRoutes from "./routes/adminRoutes";
 import reelRoutes from "./routes/reelRoutes";
+import feedbackRoutes from "./routes/feedbackRoutes";
 
 
 const app = express();
@@ -51,6 +52,7 @@ app.use(
   "/api/reels",
   reelRoutes
 );
+app.use("/api/feedback", feedbackRoutes);
 
 
 connectDB();

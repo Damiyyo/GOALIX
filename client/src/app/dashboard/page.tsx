@@ -12,6 +12,8 @@ import UpcomingFixtures from "@/components/dashboard/fixtures/UpcomingFixtures";
 import DashboardFooter from "@/components/dashboard/footer/DashboardFooter";
 import FPLHub from "@/components/dashboard/fplhub/FPLHub";
 
+import FeedbackButton from "@/components/feedback/FeedbackButton";
+import FeedbackDrawer from "@/components/feedback/FeedbackDrawer";
 
 const DashboardPage = () => {
   const router = useRouter();
@@ -23,6 +25,9 @@ const DashboardPage = () => {
     showWelcome,
     setShowWelcome,
   ] = useState(false);
+
+  const [showFeedback, setShowFeedback] =
+  useState(false);
 
   useEffect(() => {
     const storedUser =
@@ -436,7 +441,20 @@ const DashboardPage = () => {
             <DashboardFooter />
             </div>
         </section>
+        
       </div>
+      <FeedbackButton
+  onClick={() =>
+    setShowFeedback(true)
+  }
+/>
+
+<FeedbackDrawer
+  open={showFeedback}
+  onClose={() =>
+    setShowFeedback(false)
+  }
+/>
     </main>
     </div>
   );
