@@ -14,6 +14,7 @@ import FPLHub from "@/components/dashboard/fplhub/FPLHub";
 
 import FeedbackButton from "@/components/feedback/FeedbackButton";
 import FeedbackDrawer from "@/components/feedback/FeedbackDrawer";
+import EmailSupportButton from "@/components/feedback/EmailSupportButton";
 
 const DashboardPage = () => {
   const router = useRouter();
@@ -441,7 +442,7 @@ const DashboardPage = () => {
             <DashboardFooter />
             </div>
         </section>
-        
+
       </div>
       <FeedbackButton
   onClick={() =>
@@ -455,6 +456,7 @@ const DashboardPage = () => {
     setShowFeedback(false)
   }
 />
+<EmailSupportButton />
     </main>
     </div>
   );
