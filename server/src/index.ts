@@ -25,6 +25,8 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:3000",
   "https://goalix-lovat.vercel.app",
+  "https://goalix.vercel.app",
+  "https://your-custom-domain.com",
 ];
 
 app.use(
