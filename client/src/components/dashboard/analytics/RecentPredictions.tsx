@@ -36,7 +36,7 @@ const predictions = [
   {
     home: "Malaga CF",
     away: "Al-Ittihad Club",
-    prediction: "Home Win",
+    prediction: "OV 2.5",
     confidence: "85%",
     status: "Not Started",
     score: "0 - 0",
