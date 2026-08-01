@@ -6,8 +6,8 @@ const predictions = [
     away: "Atletico Madrid",
     prediction: "OV 2.5",
     confidence: "89%",
-    status: "Not started",
-    score: "0 - 0",
+    status: "Ongoing",
+    score: "0 - 1",
   },
   {
     home: "Real Madrid",
