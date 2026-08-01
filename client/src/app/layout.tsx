@@ -12,35 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: {
-    default: "Goalix",
-    template: "%s | Goalix",
+export const metadata: Metadata = {
+  title: "Goalix",
+  description: "Predict smarter. Track matches live.",
+  icons: {
+    icon: "/Goalix.png",
+    apple: "/Goalix.png",
+    shortcut: "/Goalix.png",
   },
-  description:
-    "Goalix - AI Football predictions, insights and football analytics.",
-
-    keywords: [
-      "Goalix",
-      "Football",
-      "Predictions",
-      "Live Scores",
-      "Goalix TV",
-    ],
-  
-    authors: [
-      {
-        name: "Goalix",
-      },
-    ],
-
-    openGraph: {
-      title: "Goalix",
-      description:
-        "AI Football predictions and Goalix TV.",
-      siteName: "Goalix",
-      type: "website",
-    },
 };
 
 export default function RootLayout({
@@ -53,7 +32,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }
