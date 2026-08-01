@@ -7,7 +7,7 @@ const predictions = [
     prediction: "OV 2.5",
     confidence: "89%",
     status: "Ongoing",
-    score: "0 - 1",
+    score: "1 - 1",
   },
   {
     home: "Real Madrid",
