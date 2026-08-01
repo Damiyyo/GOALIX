@@ -30,7 +30,7 @@ const predictions = [
     away: "Inter Milan",
     prediction: "GG, Home Win & OV 2.5",
     confidence: "77%",
-    status: "Ongoing",
+    status: "Lost",
     score: "1 - 1",
   },
   {
