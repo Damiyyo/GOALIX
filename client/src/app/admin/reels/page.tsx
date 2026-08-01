@@ -285,8 +285,13 @@ const AdminReelsPage = () => {
             <option>
               Transfers
             </option>
+
+            <option>
+              Admin
+            </option>
           </select>
 
+          
           <div
   className="
     rounded-3xl
