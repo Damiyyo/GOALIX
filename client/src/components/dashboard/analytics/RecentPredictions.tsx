@@ -6,7 +6,7 @@ const predictions = [
     away: "Atalanta",
     prediction: "OV 2.5",
     confidence: "89%",
-    status: "Not started",
+    status: "Won",
     score: "2 - 1",
   },
   {
@@ -14,7 +14,7 @@ const predictions = [
     away: "Rennes",
     prediction: "GG",
     confidence: "70%",
-    status: "Not started",
+    status: "Won",
     score: "3 - 3",
   },
   {
