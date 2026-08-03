@@ -502,7 +502,7 @@ const FPLHub = () => {
               font-black
             "
           >
-            0
+            2
           </h3>
 
           <p
