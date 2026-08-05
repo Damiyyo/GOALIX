@@ -364,7 +364,7 @@ const FPLHub = () => {
                 text-green-400
               "
             >
-              $100
+              100k Naira
             </h2>
 
             <p
