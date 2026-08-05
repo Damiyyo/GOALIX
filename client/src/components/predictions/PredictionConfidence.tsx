@@ -35,7 +35,7 @@ export default function PredictionConfidence({
             text-zinc-500
           "
         >
-          Confidence
+         Goalix Prediction Confidence
         </p>
   
         <span
@@ -96,7 +96,6 @@ export default function PredictionConfidence({
           text-zinc-600
         "
       >
-        Goalix Pred Confidence
       </p>
     </div>
   );
