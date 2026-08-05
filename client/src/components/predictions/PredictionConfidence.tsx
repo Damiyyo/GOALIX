@@ -96,7 +96,7 @@ export default function PredictionConfidence({
           text-zinc-600
         "
       >
-        AI Confidence
+        Goalix Pred Confidence
       </p>
     </div>
   );
