@@ -217,6 +217,8 @@ export default function PredictionCard({
           {match.prediction}
         </h2>
       </div>
+
+      
   
       {/* CONFIDENCE */}
   
