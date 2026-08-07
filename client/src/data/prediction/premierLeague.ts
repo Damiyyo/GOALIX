@@ -151,7 +151,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 3.44,
 
-    bookingCode: "GXPL005",
+    bookingCode: "",
 
     kickoff: "2026-08-22T15:00:00",
 
@@ -177,7 +177,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 1.60,
 
-    bookingCode: "GXPL005",
+    bookingCode: "",
 
     kickoff: "2026-08-22T15:00:00",
 
@@ -203,7 +203,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 1.62,
 
-    bookingCode: "GXPL005",
+    bookingCode: "",
 
     kickoff: "2026-08-22T17:30:00",
 
@@ -230,7 +230,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 1.59,
 
-    bookingCode: "GXPL005",
+    bookingCode: "",
 
     kickoff: "2026-08-23T14:00:00",
 
@@ -256,7 +256,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 1.65,
 
-    bookingCode: "GXPL005",
+    bookingCode: "",
 
     kickoff: "2026-08-23T16:30:00",
 
@@ -283,7 +283,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     odds: 2.26,
 
-    bookingCode: "GXPL005",
+    bookingCode: "",
 
     kickoff: "2026-08-24T20:00:00",
 
