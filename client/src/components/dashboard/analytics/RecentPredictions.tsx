@@ -47,7 +47,7 @@ const predictions = [
   },
 ];
 
-const betCode = "";
+const betCode = "TF4UP6";
 
 const RecentPredictions = () => {
   const [copied, setCopied] =
