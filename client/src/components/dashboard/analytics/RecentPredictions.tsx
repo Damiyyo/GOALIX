@@ -47,7 +47,7 @@ const predictions = [
   },
 ];
 
-const betCode = "GXLX8K29";
+const betCode = "";
 
 const RecentPredictions = () => {
   const [copied, setCopied] =
