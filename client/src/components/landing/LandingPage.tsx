@@ -1143,7 +1143,7 @@ export default function GoalixPredictionLanding() {
               "
             >
               <Image
-                src=""
+                src="/Goalix.png"
                 alt="Goalix"
                 width={42}
                 height={42}
