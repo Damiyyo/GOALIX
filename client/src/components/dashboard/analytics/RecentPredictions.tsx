@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { Copy, Check } from "lucide-react";
 
 const predictions = [
   {
@@ -43,7 +47,31 @@ const predictions = [
   },
 ];
 
+const betCode = "GXLX8K29";
+
 const RecentPredictions = () => {
+  const [copied, setCopied] =
+    useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(
+        betCode
+      );
+
+      setCopied(true);
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (error) {
+      console.error(
+        "Failed to copy bet code:",
+        error
+      );
+    }
+  };
+
   return (
     <section
       className="
@@ -508,6 +536,104 @@ const RecentPredictions = () => {
             </div>
           )
         )}
+      </div>
+
+      {/* ========================= */}
+      {/* BET CODE */}
+      {/* ========================= */}
+
+      <div
+        className="
+          mt-8
+
+          flex
+          items-center
+          justify-between
+
+          rounded-2xl
+
+          border border-white/10
+
+          bg-[#181818]
+
+          px-5
+          py-4
+        "
+      >
+        <div>
+          <p
+            className="
+              text-xs
+              uppercase
+              tracking-[0.12em]
+
+              text-zinc-500
+            "
+          >
+            Bet Code
+          </p>
+
+          <p
+            className="
+              mt-1
+
+              text-lg
+              font-black
+
+              tracking-wide
+
+              text-green-400
+            "
+          >
+            {betCode}
+          </p>
+        </div>
+
+        <button
+          type="button"
+          onClick={handleCopy}
+          aria-label={
+            copied
+              ? "Bet code copied"
+              : "Copy bet code"
+          }
+          title={
+            copied
+              ? "Copied"
+              : "Copy bet code"
+          }
+          className="
+            flex
+            h-10
+            w-10
+
+            items-center
+            justify-center
+
+            rounded-xl
+
+            border border-white/10
+
+            text-zinc-400
+
+            transition-all
+            duration-200
+
+            hover:bg-white/10
+            hover:text-white
+
+            active:scale-95
+          "
+        >
+          {copied ? (
+            <Check
+              size={18}
+              className="text-green-400"
+            />
+          ) : (
+            <Copy size={18} />
+          )}
+        </button>
       </div>
     </section>
   );
