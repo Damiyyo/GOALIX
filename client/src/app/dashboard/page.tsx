@@ -14,16 +14,12 @@ import FPLHub from "@/components/dashboard/fplhub/FPLHub";
 
 import FeedbackButton from "@/components/feedback/FeedbackButton";
 import FeedbackDrawer from "@/components/feedback/FeedbackDrawer";
-import EmailSupportButton from "@/components/feedback/EmailSupportButton";
 
 const DashboardPage = () => {
   const router = useRouter();
 
   const [userName, setUserName] =
     useState("User");
-
-  const [showWelcome, setShowWelcome] =
-    useState(false);
 
   const [showFeedback, setShowFeedback] =
     useState(false);
@@ -83,11 +79,12 @@ const DashboardPage = () => {
   return (
     <div
       className="
+        min-h-screen
         animate-[fadeIn_.7s_ease]
       "
     >
       {/* ================================= */}
-      {/* PREDICTION NOTICE MODAL */}
+      {/* GOALIX ANNOUNCEMENT */}
       {/* ================================= */}
 
       {showPredictionNotice && (
@@ -95,189 +92,394 @@ const DashboardPage = () => {
           className="
             fixed
             inset-0
-
             z-[100]
 
             flex
             items-center
             justify-center
 
-            bg-black/70
+            bg-black/80
 
             px-4
 
-            backdrop-blur-sm
+            backdrop-blur-md
           "
         >
+          {/* OUTER GLOW */}
+
           <div
             className="
+              relative
               w-full
-              max-w-md
-
-              rounded-[30px]
-
-              border
-              border-white/10
-
-              bg-[#151515]
-
-              p-7
-
-              shadow-2xl
-
-              animate-[fadeIn_.3s_ease]
+              max-w-[440px]
             "
           >
-            {/* ICON */}
+            <div
+              className="
+                absolute
+                -inset-1
+
+                rounded-[34px]
+
+                bg-green-500/20
+
+                blur-2xl
+              "
+            />
+
+            {/* MODAL */}
 
             <div
               className="
-                flex
-                h-14
-                w-14
+                relative
 
-                items-center
-                justify-center
+                overflow-hidden
 
-                rounded-2xl
-
-                bg-green-500/10
-
-                text-2xl
-              "
-            >
-              ⚽
-            </div>
-
-            {/* TITLE */}
-
-            <h2
-              className="
-                mt-5
-
-                text-2xl
-                font-black
-
-                tracking-tight
-
-                text-white
-              "
-            >
-              Predictions are opening soon
-            </h2>
-
-            {/* DESCRIPTION */}
-
-            <p
-              className="
-                mt-3
-
-                text-sm
-                leading-6
-
-                text-zinc-400
-              "
-            >
-              We're getting the Goalix
-              prediction section ready
-              for you. Predictions will be
-              available soon.
-            </p>
-
-            {/* SPORTYBET NOTICE */}
-
-            <div
-              className="
-                mt-5
-
-                rounded-2xl
+                rounded-[32px]
 
                 border
-                border-green-500/10
+                border-white/10
 
-                bg-green-500/[0.06]
+                bg-[#121212]
 
-                p-4
+                shadow-2xl
+
+                animate-[fadeIn_.35s_ease]
               "
             >
-              <p
+              {/* TOP GRADIENT */}
+
+              <div
                 className="
-                  text-xs
-                  font-semibold
+                  absolute
+                  inset-x-0
+                  top-0
 
-                  uppercase
+                  h-32
 
-                  tracking-[0.15em]
+                  bg-gradient-to-b
+                  from-green-500/[0.12]
+                  to-transparent
+                "
+              />
 
-                  text-green-400
+              {/* CONTENT */}
+
+              <div
+                className="
+                  relative
+
+                  p-7
+                  sm:p-8
                 "
               >
-                Courtesy of the Goalix Team
-              </p>
+                {/* TOP ICON */}
 
-              <p
-                className="
-                  mt-2
+                <div
+                  className="
+                    flex
+                    items-center
+                    justify-between
+                  "
+                >
+                  <div
+                    className="
+                      flex
+                      h-14
+                      w-14
 
-                  text-sm
-                  leading-6
+                      items-center
+                      justify-center
 
-                  text-zinc-300
-                "
-              >
-                We've added a SportyBet code
-                to your dashboard as a
-                courtesy from the Goalix team.
-              </p>
+                      rounded-2xl
 
-              <p
-                className="
-                  mt-3
+                      border
+                      border-green-500/20
 
-                  text-xs
+                      bg-green-500/10
 
-                  text-zinc-500
-                "
-              >
-                You can find the code on your
-                dashboard.
-              </p>
+                      text-2xl
+
+                      shadow-[0_0_30px_rgba(34,197,94,0.12)]
+                    "
+                  >
+                    ⚽
+                  </div>
+
+                  <span
+                    className="
+                      rounded-full
+
+                      border
+                      border-green-500/20
+
+                      bg-green-500/10
+
+                      px-3
+                      py-1.5
+
+                      text-[10px]
+                      font-bold
+
+                      uppercase
+
+                      tracking-[0.15em]
+
+                      text-green-400
+                    "
+                  >
+                    Goalix Update
+                  </span>
+                </div>
+
+                {/* TITLE */}
+
+                <h2
+                  className="
+                    mt-7
+
+                    text-3xl
+                    font-black
+
+                    leading-tight
+
+                    tracking-tight
+
+                    text-white
+                  "
+                >
+                  Predictions are
+                  <span className="text-green-400">
+                    {" "}coming soon.
+                  </span>
+                </h2>
+
+                {/* DESCRIPTION */}
+
+                <p
+                  className="
+                    mt-4
+
+                    text-sm
+                    leading-6
+
+                    text-zinc-400
+                  "
+                >
+                  We're putting the finishing
+                  touches on the Goalix
+                  prediction experience. Soon,
+                  you'll be able to access our
+                  football predictions and
+                  insights directly from your
+                  dashboard.
+                </p>
+
+                {/* SPORTYBET CARD */}
+
+                <div
+                  className="
+                    relative
+
+                    mt-6
+
+                    overflow-hidden
+
+                    rounded-2xl
+
+                    border
+                    border-white/10
+
+                    bg-white/[0.04]
+
+                    p-5
+                  "
+                >
+                  {/* CARD GLOW */}
+
+                  <div
+                    className="
+                      absolute
+                      -right-8
+                      -top-8
+
+                      h-24
+                      w-24
+
+                      rounded-full
+
+                      bg-green-500/10
+
+                      blur-2xl
+                    "
+                  />
+
+                  <div
+                    className="
+                      relative
+                    "
+                  >
+                    <div
+                      className="
+                        flex
+                        items-center
+                        gap-3
+                      "
+                    >
+                      <div
+                        className="
+                          flex
+                          h-9
+                          w-9
+
+                          items-center
+                          justify-center
+
+                          rounded-xl
+
+                          bg-green-500/10
+
+                          text-sm
+                        "
+                      >
+                        🎁
+                      </div>
+
+                      <div>
+                        <p
+                          className="
+                            text-xs
+                            font-bold
+
+                            uppercase
+
+                            tracking-[0.12em]
+
+                            text-green-400
+                          "
+                        >
+                          A little something
+                          from Goalix
+                        </p>
+                      </div>
+                    </div>
+
+                    <p
+                      className="
+                        mt-4
+
+                        text-sm
+                        leading-6
+
+                        text-zinc-300
+                      "
+                    >
+                      As a courtesy from the
+                      Goalix team, we've placed
+                      a SportyBet code on your
+                      dashboard for you.
+                    </p>
+
+                    <div
+                      className="
+                        mt-4
+
+                        flex
+                        items-center
+                        justify-between
+
+                        rounded-xl
+
+                        border
+                        border-white/10
+
+                        bg-black/30
+
+                        px-4
+                        py-3
+                      "
+                    >
+                      <span
+                        className="
+                          text-xs
+
+                          text-zinc-500
+                        "
+                      >
+                        Available on
+                        dashboard
+                      </span>
+
+                      <span
+                        className="
+                          text-xs
+                          font-bold
+
+                          text-white
+                        "
+                      >
+                        SportyBet Code
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* BUTTON */}
+
+                <button
+                  type="button"
+                  onClick={
+                    handlePredictionNoticeClose
+                  }
+                  className="
+                    mt-6
+
+                    w-full
+
+                    rounded-2xl
+
+                    bg-white
+
+                    px-5
+                    py-4
+
+                    text-sm
+                    font-black
+
+                    text-black
+
+                    shadow-lg
+
+                    transition-all
+                    duration-300
+
+                    hover:scale-[1.02]
+                    hover:bg-zinc-100
+
+                    active:scale-[0.98]
+                  "
+                >
+                  Explore My Dashboard
+                </button>
+
+                {/* FOOTNOTE */}
+
+                <p
+                  className="
+                    mt-4
+
+                    text-center
+
+                    text-[11px]
+
+                    text-zinc-600
+                  "
+                >
+                  You can find your SportyBet
+                  code on the dashboard.
+                </p>
+              </div>
             </div>
-
-            {/* BUTTON */}
-
-            <button
-              type="button"
-              onClick={
-                handlePredictionNoticeClose
-              }
-              className="
-                mt-6
-
-                w-full
-
-                rounded-2xl
-
-                bg-white
-
-                px-5
-                py-4
-
-                text-sm
-                font-black
-
-                text-black
-
-                transition-all
-                duration-300
-
-                hover:scale-[1.02]
-
-                active:scale-[0.98]
-              "
-            >
-              Continue to Dashboard
-            </button>
           </div>
         </div>
       )}
@@ -293,9 +495,7 @@ const DashboardPage = () => {
           text-white
         "
       >
-        {/* ================================= */}
         {/* MOBILE NAVBAR */}
-        {/* ================================= */}
 
         <div
           className="
@@ -312,9 +512,8 @@ const DashboardPage = () => {
         </div>
 
         <div className="flex">
-          {/* ================================= */}
+
           {/* DESKTOP SIDEBAR */}
-          {/* ================================= */}
 
           <aside
             className="
@@ -519,9 +718,7 @@ const DashboardPage = () => {
             </nav>
           </aside>
 
-          {/* ================================= */}
           {/* DASHBOARD CONTENT */}
-          {/* ================================= */}
 
           <section
             className="
@@ -536,9 +733,8 @@ const DashboardPage = () => {
             "
           >
             <div className="mx-auto max-w-7xl">
-              {/* ================================= */}
+
               {/* HERO */}
-              {/* ================================= */}
 
               <section
                 className="
@@ -646,36 +842,27 @@ const DashboardPage = () => {
                 </div>
               </section>
 
-              {/* ================================= */}
               {/* RECENT PREDICTIONS */}
-              {/* ================================= */}
 
               <RecentPredictions />
 
-              {/* ================================= */}
               {/* FPL HUB */}
-              {/* ================================= */}
 
               <FPLHub />
 
-              {/* ================================= */}
               {/* UPCOMING FIXTURES */}
-              {/* ================================= */}
 
               <UpcomingFixtures />
 
-              {/* ================================= */}
               {/* FOOTER */}
-              {/* ================================= */}
 
               <DashboardFooter />
+
             </div>
           </section>
         </div>
 
-        {/* ================================= */}
         {/* FEEDBACK */}
-        {/* ================================= */}
 
         <FeedbackButton
           onClick={() =>
