@@ -1,49 +1,48 @@
-"use client";
 
 import Link from "next/link";
 
 const predictions = [
-  {
-    home: "Juventus",
-    away: "Inter Milan",
-    prediction: "OV 2.5",
-    confidence: "89%",
-    status: "Won",
-    score: "1 - 2",
-  },
-  {
-    home: "Chelsea",
-    away: "AC Milan",
-    prediction: "GG & BTTS",
-    confidence: "70%",
-    status: "Lost",
-    score: "3 - 0",
-  },
-  {
-    home: "PSG",
-    away: "Manchester United",
-    prediction: "OV 2.5",
-    confidence: "80%",
-    status: "Lost",
-    score: "1 - 1",
-  },
-  {
-    home: "Ferencvarosi Budapest",
-    away: "Real Madrid",
-    prediction: "Away Win & OV 2.5",
-    confidence: "89%",
-    status: "Won",
-    score: "1 - 2",
-  },
-  {
-    home: "Brighton",
-    away: "Roma",
-    prediction: "GG",
-    confidence: "82%",
-    status: "Lost",
-    score: "3 - 0",
-  },
-];
+    {
+      home: "Juventus",
+      away: "Inter Milan",
+      prediction: "OV 2.5",
+      confidence: "89%",
+      status: "Won",
+      score: "1 - 2",
+    },
+    {
+      home: "Chelsea",
+      away: "AC Milan",
+      prediction: "GG & BTTS",
+      confidence: "70%",
+      status: "Lost",
+      score: "3 - 0",
+    },
+    {
+      home: "PSG",
+      away: "Manchester United",
+      prediction: "OV 2.5",
+      confidence: "80%",
+      status: "Lost",
+      score: "1 - 1",
+    },
+    {
+      home: "Ferencvarosi Budapest",
+      away: "Real Madrid",
+      prediction: "Away Win & OV 2.5",
+      confidence: "89%",
+      status: "Won",
+      score: "1 - 2",
+    },
+    {
+      home: "Brighton",
+      away: "Roma",
+      prediction: "GG",
+      confidence: "82%",
+      status: "Lost",
+      score: "3 - 0",
+    },
+  ];
 
 const RecentPredictions = () => {
   return (
