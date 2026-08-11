@@ -41,11 +41,11 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     awayLogo: clubLogos.Coventry,
 
-    prediction: "Home Win",
+    prediction: "BTTS % OV 2.5",
 
-    confidence: 92,
+    confidence: 85,
 
-    odds: 1.20,
+    odds: 2.80,
 
     bookingCode: "",
 
@@ -67,11 +67,11 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     awayLogo: clubLogos.CrystalPalace,
 
-    prediction: "Both Teams To Score",
+    prediction: "BTTS",
 
     confidence: 88,
 
-    odds: 1.74,
+    odds: 1.75,
 
     bookingCode: "",
 
@@ -123,7 +123,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     confidence: 84,
 
-    odds: 1.45,
+    odds: 1.49,
 
     bookingCode: "",
 
@@ -147,7 +147,7 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     prediction: "Draw",
 
-    confidence: 77,
+    confidence: 80,
 
     odds: 3.44,
 
@@ -171,11 +171,11 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     awayLogo: clubLogos.LeedsUnited,
 
-    prediction: "Home 1UP",
+    prediction: "Away 1up",
 
     confidence: 77,
 
-    odds: 1.60,
+    odds: 1.93,
 
     bookingCode: "",
 
@@ -199,9 +199,9 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     prediction: "OV 2.5",
 
-    confidence: 77,
+    confidence: 75,
 
-    odds: 1.62,
+    odds: 1.63,
 
     bookingCode: "",
 
@@ -226,9 +226,9 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     prediction: "OV 2.5",
 
-    confidence: 77,
+    confidence: 80,
 
-    odds: 1.59,
+    odds: 1.60,
 
     bookingCode: "",
 
@@ -252,9 +252,9 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     prediction: "BTTS & OV 2.5",
 
-    confidence: 77,
+    confidence: 85,
 
-    odds: 1.65,
+    odds: 1.67,
 
     bookingCode: "",
 
@@ -279,9 +279,9 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     prediction: "Away Win",
 
-    confidence: 7,
+    confidence: 77,
 
-    odds: 2.26,
+    odds: 2.21,
 
     bookingCode: "",
 
