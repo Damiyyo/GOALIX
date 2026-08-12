@@ -1,7 +1,10 @@
-
 "use client";
 
-import { useMemo, useState } from "react";
+import {
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 
 import Navbar from "@/components/navigation/Navbar";
 
@@ -18,9 +21,10 @@ import { allPredictions } from "@/data/prediction";
 import { tickets } from "@/data/odds/tickets";
 
 export default function PredictionsPage() {
-  const [activeTab, setActiveTab] = useState<
-    "predictions" | "odds"
-  >("predictions");
+  const [activeTab, setActiveTab] =
+    useState<"predictions" | "odds">(
+      "predictions"
+    );
 
   const [selectedLeague, setSelectedLeague] =
     useState("All");
@@ -33,22 +37,106 @@ export default function PredictionsPage() {
     setShowPredictionLoader,
   ] = useState(false);
 
+  /* ========================= */
+  /* 2 ODDS PROMPT             */
+  /* ========================= */
+
+  const [
+    showWeeklyOddsPrompt,
+    setShowWeeklyOddsPrompt,
+  ] = useState(false);
+
+  const FIVE_DAYS =
+    5 * 24 * 60 * 60 * 1000;
+
+  /* ========================= */
+  /* CHECK 2 ODDS PROMPT       */
+  /* ========================= */
+
+  useEffect(() => {
+    const lastShown =
+      localStorage.getItem(
+        "goalix_2_odds_prompt"
+      );
+
+    if (!lastShown) {
+      setShowWeeklyOddsPrompt(true);
+      return;
+    }
+
+    const lastShownTime =
+      Number(lastShown);
+
+    const timePassed =
+      Date.now() - lastShownTime;
+
+    if (timePassed >= FIVE_DAYS) {
+      setShowWeeklyOddsPrompt(true);
+    }
+  }, []);
+
+  /* ========================= */
+  /* CLOSE PROMPT               */
+  /* ========================= */
+
+  const closeWeeklyOddsPrompt = () => {
+    localStorage.setItem(
+      "goalix_2_odds_prompt",
+      Date.now().toString()
+    );
+
+    setShowWeeklyOddsPrompt(false);
+  };
+
+  /* ========================= */
+  /* VIEW 2 ODDS                */
+  /* ========================= */
+
+  const viewWeeklyOdds = () => {
+    localStorage.setItem(
+      "goalix_2_odds_prompt",
+      Date.now().toString()
+    );
+
+    setShowWeeklyOddsPrompt(false);
+
+    setShowPredictionLoader(false);
+
+    setShowOdds(false);
+
+    setActiveTab("odds");
+  };
+
+  /* ========================= */
+  /* FILTER PREDICTIONS         */
+  /* ========================= */
+
   const filteredPredictions =
     useMemo(() => {
-      if (selectedLeague === "All") {
+      if (
+        selectedLeague ===
+        "All"
+      ) {
         return allPredictions;
       }
 
       return allPredictions.filter(
         (match) =>
-          match.league === selectedLeague
+          match.league ===
+          selectedLeague
       );
     }, [selectedLeague]);
+
+  /* ========================= */
+  /* TAB CHANGE                 */
+  /* ========================= */
 
   const handleTabChange = (
     tab: "predictions" | "odds"
   ) => {
-    if (tab === activeTab) return;
+    if (tab === activeTab) {
+      return;
+    }
 
     if (tab === "odds") {
       setShowOdds(false);
@@ -73,17 +161,25 @@ export default function PredictionsPage() {
         text-white
       "
     >
-      {/* MOBILE NAVBAR */}
+      {/* ========================= */}
+      {/* MOBILE NAVBAR              */}
+      {/* ========================= */}
 
       <div className="lg:hidden">
         <Navbar />
       </div>
 
-      {/* DESKTOP NAVBAR */}
+      {/* ========================= */}
+      {/* DESKTOP NAVBAR             */}
+      {/* ========================= */}
 
       <div className="hidden lg:block">
         <Navbar />
       </div>
+
+      {/* ========================= */}
+      {/* MAIN CONTENT               */}
+      {/* ========================= */}
 
       <div
         className="
@@ -99,7 +195,9 @@ export default function PredictionsPage() {
           lg:pt-24
         "
       >
-        {/* HERO */}
+        {/* ========================= */}
+        {/* HERO                       */}
+        {/* ========================= */}
 
         <section className="mb-10">
           <p
@@ -147,14 +245,18 @@ export default function PredictionsPage() {
           </p>
         </section>
 
-        {/* TABS */}
+        {/* ========================= */}
+        {/* TABS                       */}
+        {/* ========================= */}
 
         <PredictionTabs
           activeTab={activeTab}
           onTabChange={handleTabChange}
         />
 
-        {/* FILTER */}
+        {/* ========================= */}
+        {/* FILTER                     */}
+        {/* ========================= */}
 
         {activeTab ===
           "predictions" && (
@@ -168,7 +270,9 @@ export default function PredictionsPage() {
           />
         )}
 
-        {/* PREDICTIONS */}
+        {/* ========================= */}
+        {/* PREDICTIONS                */}
+        {/* ========================= */}
 
         {activeTab ===
           "predictions" &&
@@ -239,8 +343,9 @@ export default function PredictionsPage() {
               )}
             </>
           )}
-                  {/* ========================= */}
-        {/* RETURNING TO PREDICTIONS */}
+
+        {/* ========================= */}
+        {/* RETURNING TO PREDICTIONS   */}
         {/* ========================= */}
 
         {showPredictionLoader && (
@@ -258,7 +363,7 @@ export default function PredictionsPage() {
         )}
 
         {/* ========================= */}
-        {/* ODDS LOADER */}
+        {/* ODDS LOADER                */}
         {/* ========================= */}
 
         {activeTab === "odds" &&
@@ -272,7 +377,7 @@ export default function PredictionsPage() {
           )}
 
         {/* ========================= */}
-        {/* ODDS CARDS */}
+        {/* ODDS CARDS                 */}
         {/* ========================= */}
 
         {activeTab === "odds" &&
@@ -301,6 +406,313 @@ export default function PredictionsPage() {
             </section>
           )}
       </div>
+
+      {/* ========================= */}
+      {/* 2 ODDS PROMPT              */}
+      {/* ========================= */}
+
+      {showWeeklyOddsPrompt && (
+        <div
+          className="
+            fixed
+            inset-0
+            z-[100]
+
+            flex
+            items-center
+            justify-center
+
+            bg-black/75
+
+            px-4
+
+            backdrop-blur-md
+          "
+        >
+          <div
+            className="
+              relative
+
+              w-full
+              max-w-lg
+
+              overflow-hidden
+
+              rounded-[32px]
+
+              border
+              border-white/10
+
+              bg-[#111111]
+
+              p-8
+
+              shadow-2xl
+            "
+          >
+            {/* GLOW */}
+
+            <div
+              className="
+                pointer-events-none
+
+                absolute
+                -right-20
+                -top-20
+
+                h-48
+                w-48
+
+                rounded-full
+
+                bg-green-500/10
+
+                blur-3xl
+              "
+            />
+
+            {/* ICON */}
+
+            <div
+              className="
+                relative
+
+                flex
+                h-16
+                w-16
+
+                items-center
+                justify-center
+
+                rounded-2xl
+
+                border
+                border-green-500/20
+
+                bg-green-500/10
+
+                text-2xl
+              "
+            >
+              ⚡
+            </div>
+
+            {/* LABEL */}
+
+            <p
+              className="
+                relative
+
+                mt-6
+
+                text-xs
+                font-black
+                uppercase
+                tracking-[0.2em]
+
+                text-green-400
+              "
+            >
+              Goalix Pick
+            </p>
+
+            {/* TITLE */}
+
+            <h2
+              className="
+                relative
+
+                mt-3
+
+                text-4xl
+                font-black
+                tracking-tight
+              "
+            >
+              This Week's
+              <br />
+              2 Odds
+            </h2>
+
+            {/* DESCRIPTION */}
+
+            <p
+              className="
+                relative
+
+                mt-4
+
+                leading-7
+
+                text-zinc-400
+              "
+            >
+              We've selected a
+              carefully researched
+              2-odds ticket from our
+              available predictions.
+              Check out this week's
+              selection and see what
+              Goalix AI is backing.
+            </p>
+
+            {/* ODDS PREVIEW */}
+
+            <div
+              className="
+                relative
+
+                mt-7
+
+                flex
+                items-center
+                justify-between
+
+                rounded-2xl
+
+                border
+                border-green-500/20
+
+                bg-green-500/5
+
+                p-5
+              "
+            >
+              <div>
+                <p
+                  className="
+                    text-xs
+                    uppercase
+                    tracking-wider
+
+                    text-zinc-500
+                  "
+                >
+                  Selected Ticket
+                </p>
+
+                <p
+                  className="
+                    mt-1
+
+                    text-lg
+                    font-black
+                  "
+                >
+                  2 Odds
+                </p>
+              </div>
+
+              <div
+                className="
+                  text-3xl
+                  font-black
+
+                  text-green-400
+                "
+              >
+                2.00+
+              </div>
+            </div>
+
+            {/* ACTIONS */}
+
+            <div
+              className="
+                relative
+
+                mt-7
+
+                flex
+                flex-col
+
+                gap-3
+              "
+            >
+              <button
+                type="button"
+                onClick={
+                  viewWeeklyOdds
+                }
+                className="
+                  w-full
+
+                  rounded-2xl
+
+                  bg-green-500
+
+                  px-6
+                  py-4
+
+                  text-sm
+                  font-black
+
+                  text-black
+
+                  transition-all
+                  duration-300
+
+                  hover:scale-[1.02]
+                  hover:bg-green-400
+                "
+              >
+                View 2 Odds
+              </button>
+
+              <button
+                type="button"
+                onClick={
+                  closeWeeklyOddsPrompt
+                }
+                className="
+                  w-full
+
+                  rounded-2xl
+
+                  border
+                  border-white/10
+
+                  bg-white/[0.03]
+
+                  px-6
+                  py-4
+
+                  text-sm
+                  font-semibold
+
+                  text-zinc-400
+
+                  transition-all
+
+                  hover:bg-white/[0.06]
+                  hover:text-white
+                "
+              >
+                Maybe Later
+              </button>
+            </div>
+
+            {/* FOOTNOTE */}
+
+            <p
+              className="
+                relative
+
+                mt-5
+
+                text-center
+
+                text-xs
+
+                text-zinc-600
+              "
+            >
+              New Goalix picks are
+              added regularly.
+            </p>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
