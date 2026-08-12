@@ -98,6 +98,10 @@ const Navbar = () => {
       href: "/goalix-tv",
     },
     {
+      name: "2 Odds",
+      href: "/2odds",
+    },
+    {
       name: "Leagues",
       href: "/leagues",
     },

@@ -14,6 +14,7 @@ import FPLHub from "@/components/dashboard/fplhub/FPLHub";
 
 import FeedbackButton from "@/components/feedback/FeedbackButton";
 import FeedbackDrawer from "@/components/feedback/FeedbackDrawer";
+
 import EmailSupportButton from "@/components/feedback/EmailSupportButton";
 
 const DashboardPage = () => {
@@ -25,11 +26,23 @@ const DashboardPage = () => {
   const [showFeedback, setShowFeedback] =
     useState(false);
 
+  /* ========================= */
+  /* 2 ODDS PROMPT             */
+  /* ========================= */
+
+  const [showTwoOddsPrompt, setShowTwoOddsPrompt] =
+    useState(false);
+
+  const FIVE_DAYS =
+    5 * 24 * 60 * 60 * 1000;
+
+  /* ========================= */
+  /* LOAD USER + PROMPT        */
+  /* ========================= */
+
   useEffect(() => {
     const storedUser =
-      localStorage.getItem(
-        "goalixUser"
-      );
+      localStorage.getItem("goalixUser");
 
     if (storedUser) {
       try {
@@ -37,8 +50,7 @@ const DashboardPage = () => {
           JSON.parse(storedUser);
 
         setUserName(
-          user.fullName ||
-            "User"
+          user.fullName || "User"
         );
       } catch (error) {
         console.error(
@@ -47,12 +59,66 @@ const DashboardPage = () => {
         );
       }
     }
+
+    /* ========================= */
+    /* CHECK 2 ODDS TIMER         */
+    /* ========================= */
+
+    const lastShown =
+      localStorage.getItem(
+        "goalixTwoOddsPrompt"
+      );
+
+    if (!lastShown) {
+      setShowTwoOddsPrompt(true);
+      return;
+    }
+
+    const lastShownTime =
+      Number(lastShown);
+
+    const timePassed =
+      Date.now() - lastShownTime;
+
+    if (timePassed >= FIVE_DAYS) {
+      setShowTwoOddsPrompt(true);
+    }
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem(
-      "token"
+  /* ========================= */
+  /* CLOSE 2 ODDS PROMPT        */
+  /* ========================= */
+
+  const closeTwoOddsPrompt = () => {
+    localStorage.setItem(
+      "goalixTwoOddsPrompt",
+      Date.now().toString()
     );
+
+    setShowTwoOddsPrompt(false);
+  };
+
+  /* ========================= */
+  /* VIEW 2 ODDS                */
+  /* ========================= */
+
+  const handleViewTwoOdds = () => {
+    localStorage.setItem(
+      "goalixTwoOddsPrompt",
+      Date.now().toString()
+    );
+
+    setShowTwoOddsPrompt(false);
+
+    router.push("/predictions");
+  };
+
+  /* ========================= */
+  /* LOGOUT                     */
+  /* ========================= */
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
 
     localStorage.removeItem(
       "goalixToken"
@@ -82,7 +148,9 @@ const DashboardPage = () => {
           text-white
         "
       >
-        {/* MOBILE NAVBAR */}
+        {/* ========================= */}
+        {/* MOBILE NAVBAR              */}
+        {/* ========================= */}
 
         <div
           className="
@@ -99,7 +167,9 @@ const DashboardPage = () => {
         </div>
 
         <div className="flex">
-          {/* DESKTOP SIDEBAR */}
+          {/* ========================= */}
+          {/* DESKTOP SIDEBAR            */}
+          {/* ========================= */}
 
           <aside
             className="
@@ -277,9 +347,7 @@ const DashboardPage = () => {
               </Link>
 
               <button
-                onClick={
-                  handleLogout
-                }
+                onClick={handleLogout}
                 className="
                   mt-6
 
@@ -306,7 +374,9 @@ const DashboardPage = () => {
             </nav>
           </aside>
 
-          {/* DASHBOARD CONTENT */}
+          {/* ========================= */}
+          {/* DASHBOARD CONTENT          */}
+          {/* ========================= */}
 
           <section
             className="
@@ -455,7 +525,9 @@ const DashboardPage = () => {
         </div>
       </main>
 
-      {/* FEEDBACK BUTTON */}
+      {/* ========================= */}
+      {/* FEEDBACK BUTTON            */}
+      {/* ========================= */}
 
       <FeedbackButton
         onClick={() =>
@@ -463,7 +535,9 @@ const DashboardPage = () => {
         }
       />
 
-      {/* FEEDBACK DRAWER */}
+      {/* ========================= */}
+      {/* FEEDBACK DRAWER            */}
+      {/* ========================= */}
 
       <FeedbackDrawer
         open={showFeedback}
@@ -471,6 +545,315 @@ const DashboardPage = () => {
           setShowFeedback(false)
         }
       />
+
+      {/* ========================= */}
+      {/* 2 ODDS PROMPT              */}
+      {/* ========================= */}
+
+      {showTwoOddsPrompt && (
+        <div
+          className="
+            fixed
+            inset-0
+            z-[100]
+
+            flex
+            items-center
+            justify-center
+
+            bg-black/75
+
+            px-4
+
+            backdrop-blur-md
+          "
+        >
+          <div
+            className="
+              relative
+
+              w-full
+              max-w-lg
+
+              overflow-hidden
+
+              rounded-[32px]
+
+              border
+              border-white/10
+
+              bg-[#111111]
+
+              p-8
+
+              shadow-2xl
+            "
+          >
+            {/* GLOW */}
+
+            <div
+              className="
+                pointer-events-none
+
+                absolute
+                -right-20
+                -top-20
+
+                h-48
+                w-48
+
+                rounded-full
+
+                bg-green-500/10
+
+                blur-3xl
+              "
+            />
+
+            {/* ICON */}
+
+            <div
+              className="
+                relative
+
+                flex
+                h-16
+                w-16
+
+                items-center
+                justify-center
+
+                rounded-2xl
+
+                border
+                border-green-500/20
+
+                bg-green-500/10
+
+                text-2xl
+              "
+            >
+              ⚡
+            </div>
+
+            {/* LABEL */}
+
+            <p
+              className="
+                relative
+
+                mt-6
+
+                text-xs
+                font-black
+                uppercase
+
+                tracking-[0.2em]
+
+                text-green-400
+              "
+            >
+              Goalix AI
+            </p>
+
+            {/* TITLE */}
+
+            <h2
+              className="
+                relative
+
+                mt-3
+
+                text-4xl
+                font-black
+
+                tracking-tight
+              "
+            >
+              This Week's
+              <br />
+              2 Odds Pick
+            </h2>
+
+            {/* DESCRIPTION */}
+
+            <p
+              className="
+                relative
+
+                mt-4
+
+                leading-7
+
+                text-zinc-400
+              "
+            >
+              Goalix has selected a
+              focused 2-odds ticket
+              from our football
+              predictions.
+              Take a look at the
+              current selection.
+            </p>
+
+            {/* ODDS PREVIEW */}
+
+            <div
+              className="
+                relative
+
+                mt-7
+
+                flex
+                items-center
+                justify-between
+
+                rounded-2xl
+
+                border
+                border-green-500/20
+
+                bg-green-500/5
+
+                p-5
+              "
+            >
+              <div>
+                <p
+                  className="
+                    text-xs
+                    uppercase
+                    tracking-wider
+
+                    text-zinc-500
+                  "
+                >
+                  Featured Ticket
+                </p>
+
+                <p
+                  className="
+                    mt-1
+
+                    text-lg
+                    font-black
+                  "
+                >
+                  2 Odds
+                </p>
+              </div>
+
+              <div
+                className="
+                  text-3xl
+                  font-black
+
+                  text-green-400
+                "
+              >
+                2.00+
+              </div>
+            </div>
+
+            {/* ACTIONS */}
+
+            <div
+              className="
+                relative
+
+                mt-7
+
+                flex
+                flex-col
+
+                gap-3
+              "
+            >
+              <button
+                type="button"
+                onClick={
+                  handleViewTwoOdds
+                }
+                className="
+                  w-full
+
+                  rounded-2xl
+
+                  bg-green-500
+
+                  px-6
+                  py-4
+
+                  text-sm
+                  font-black
+
+                  text-black
+
+                  transition-all
+                  duration-300
+
+                  hover:scale-[1.02]
+                  hover:bg-green-400
+                "
+              >
+                View 2 Odds
+              </button>
+
+              <button
+                type="button"
+                onClick={
+                  closeTwoOddsPrompt
+                }
+                className="
+                  w-full
+
+                  rounded-2xl
+
+                  border
+                  border-white/10
+
+                  bg-white/[0.03]
+
+                  px-6
+                  py-4
+
+                  text-sm
+                  font-semibold
+
+                  text-zinc-400
+
+                  transition-all
+                  duration-300
+
+                  hover:bg-white/[0.06]
+                  hover:text-white
+                "
+              >
+                Maybe Later
+              </button>
+            </div>
+
+            {/* FOOTNOTE */}
+
+            <p
+              className="
+                relative
+
+                mt-5
+
+                text-center
+
+                text-xs
+
+                text-zinc-600
+              "
+            >
+              Your next 2 Odds prompt
+              will appear in 5 days.
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
