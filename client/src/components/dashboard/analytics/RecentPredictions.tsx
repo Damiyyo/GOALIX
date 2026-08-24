@@ -31,16 +31,16 @@ const predictions = [
       away: "Real Madrid",
       prediction: "Away Win & OV 2.5",
       confidence: "89%",
-      status: "Not Started",
-      score: "0 - 0",
+      status: "Won",
+      score: "1 - 2",
     },
     {
       home: "Genoa",
       away: "Napoli",
       prediction: "Away win",
       confidence: "82%",
-      status: "Not Started",
-      score: "0 - 0",
+      status: "Won",
+      score: "0 - 2",
     },
   ];
 
