@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const fixtures = [
   {
-    home: "Manchester City",
-    away: "AFC Bournemouth",
+    home: "Crystal Palace",
+    away: "Manchester City",
     time: "20:00",
     league: "Premier League",
   },
@@ -24,14 +24,14 @@ const fixtures = [
   },
 
   {
-    home: "Inter Milan",
-    away: "AC Monza",
-    time: "17:30",
+    home: "Cagliari",
+    away: "Inter Milan",
+    time: "17:45",
     league: "Serie A",
   },
   {
-    home: "PSG",
-    away: "Rennes",
+    home: "Monaco",
+    away: "Marseille",
     time: "19:45",
     league: "Ligue1",
   },
