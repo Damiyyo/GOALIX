@@ -29,263 +29,261 @@ export interface PredictionMatch {
 export const premierLeaguePredictions: PredictionMatch[] =
 [
   {
-    id: 1,
+    id: 11,
 
     league: "Premier League",
 
-    homeTeam: "Arsenal",
+    homeTeam: "Crystal Palace",
 
-    awayTeam: "Coventry",
+    awayTeam: "Manchester City",
 
-    homeLogo: clubLogos.Arsenal,
+    homeLogo: clubLogos.CrystalPalace,
 
-    awayLogo: clubLogos.Coventry,
-
-    prediction: "BTTS % OV 2.5",
-
-    confidence: 85,
-
-    odds: 2.80,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-21T20:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 2,
-
-    league: "Premier League",
-
-    homeTeam: "Everton",
-
-    awayTeam: "Crystal Palace",
-
-    homeLogo: clubLogos.Everton,
-
-    awayLogo: clubLogos.CrystalPalace,
-
-    prediction: "BTTS",
-
-    confidence: 88,
-
-    odds: 1.75,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-22T15:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 3,
-
-    league: "Premier League",
-
-    homeTeam: "Manchester City",
-
-    awayTeam: "Bournemouth",
-
-    homeLogo: clubLogos.ManchesterCity,
-
-    awayLogo: clubLogos.Bournemouth,
-
-    prediction: "Home Win",
-
-    confidence: 91,
-
-    odds: 1.50,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-23T14:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 4,
-
-    league: "Premier League",
-
-    homeTeam: "Hull City",
-
-    awayTeam: "Manchester United",
-
-    homeLogo: clubLogos.HullCity,
-
-    awayLogo: clubLogos.ManchesterUnited,
+    awayLogo: clubLogos.ManchesterCity,
 
     prediction: "Away Win",
 
     confidence: 84,
 
-    odds: 1.49,
+    odds: 1.67,
 
     bookingCode: "",
 
-    kickoff: "2026-08-22T12:30:00",
+    kickoff: "2026-08-28T20:00:00",
 
     status: "published",
   },
 
   {
-    id: 5,
+    id: 12,
 
     league: "Premier League",
 
-    homeTeam: "Ipswich",
+    homeTeam: "Liverpool",
 
-    awayTeam: "Sunderland",
+    awayTeam: "Nottingham Forest",
 
-    homeLogo: clubLogos.Ipswich,
+    homeLogo: clubLogos.Liverpool,
 
-    awayLogo: clubLogos.Sunderland,
+    awayLogo: clubLogos.NottinghamForest,
 
-    prediction: "Draw",
+    prediction: "Home Win",
 
-    confidence: 80,
+    confidence: 87,
 
-    odds: 3.44,
+    odds: 1.53,
 
     bookingCode: "",
 
-    kickoff: "2026-08-22T15:00:00",
+    kickoff: "2026-08-29T12:30:00",
 
     status: "published",
   },
 
   {
-    id: 6,
+    id: 13,
 
     league: "Premier League",
 
-    homeTeam: "Nottingham Forest",
+    homeTeam: "Bournemouth",
 
-    awayTeam: "Leeds United",
+    awayTeam: "Everton",
 
-    homeLogo: clubLogos.NottinghamForest,
+    homeLogo: clubLogos.Bournemouth,
 
-    awayLogo: clubLogos.LeedsUnited,
+    awayLogo: clubLogos.Everton,
 
-    prediction: "Away 1up",
+    prediction: "OV 2.5 Goals",
 
-    confidence: 77,
+    confidence: 90,
+
+    odds: 1.88,
+
+    bookingCode: "",
+
+    kickoff: "2026-08-29T15:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 14,
+
+    league: "Premier League",
+
+    homeTeam: "Coventry",
+
+    awayTeam: "Hull City",
+
+    homeLogo: clubLogos.Coventry,
+
+    awayLogo: clubLogos.HullCity,
+
+    prediction: "Home win",
+
+    confidence: 81,
 
     odds: 1.93,
 
     bookingCode: "",
 
-    kickoff: "2026-08-22T15:00:00",
+    kickoff: "2026-08-29T15:00:00",
 
     status: "published",
   },
 
   {
-    id: 7,
+    id: 15,
 
     league: "Premier League",
 
-    homeTeam: "Brentford",
+    homeTeam: "Tottenham",
 
-    awayTeam: "Tottenham",
+    awayTeam: "Newcastle United",
 
-    homeLogo: clubLogos.Brentford,
+    homeLogo: clubLogos.Tottenham,
 
-    awayLogo: clubLogos.Tottenham,
+    awayLogo: clubLogos.NewcastleUnited,
 
-    prediction: "OV 2.5",
+    prediction: "BTTS",
 
-    confidence: 75,
+    confidence: 79,
 
-    odds: 1.63,
+    odds: 1.57,
 
     bookingCode: "",
 
-    kickoff: "2026-08-22T17:30:00",
-
-
-    status: "published",
-  },
-
-  {
-    id: 8,
-
-    league: "Premier League",
-
-    homeTeam: "Brighton",
-
-    awayTeam: "Aston Villa",
-
-    homeLogo: clubLogos.Brighton,
-
-    awayLogo: clubLogos.AstonVilla,
-
-    prediction: "OV 2.5",
-
-    confidence: 80,
-
-    odds: 1.60,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-23T14:00:00",
+    kickoff: "2026-08-29T17:30:00",
 
     status: "published",
   },
 
   {
-    id: 9,
+    id: 16,
 
     league: "Premier League",
 
-    homeTeam: "Newcastle United",
+    homeTeam: "Chelsea",
 
-    awayTeam: "Liverpool",
+    awayTeam: "Brighton",
 
-    homeLogo: clubLogos.NewcastleUnited,
+    homeLogo: clubLogos.Chelsea,
 
-    awayLogo: clubLogos.Liverpool,
+    awayLogo: clubLogos.Brighton,
 
-    prediction: "BTTS & OV 2.5",
+    prediction: "OV 2.5 Goals",
 
     confidence: 85,
 
-    odds: 1.67,
+    odds: 1.70,
 
     bookingCode: "",
 
-    kickoff: "2026-08-23T16:30:00",
-
+    kickoff: "2026-08-30T14:00:00",
 
     status: "published",
   },
 
   {
-    id: 10,
+    id: 17,
 
     league: "Premier League",
 
-    homeTeam: "Fulham ",
+    homeTeam: "Leeds United",
 
-    awayTeam: "Chelsea",
+    awayTeam: "Brentford",
 
-    homeLogo: clubLogos.Fulham,
+    homeLogo: clubLogos.LeedsUnited,
 
-    awayLogo: clubLogos.Chelsea,
+    awayLogo: clubLogos.Brentford,
 
-    prediction: "Away Win",
+    prediction: "OV 1.5 Goals",
 
-    confidence: 77,
+    confidence: 83,
 
-    odds: 2.21,
+    odds: 1.29,
 
     bookingCode: "",
 
-    kickoff: "2026-08-24T20:00:00",
+    kickoff: "2026-08-30T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 18,
+
+    league: "Premier League",
+
+    homeTeam: "Sunderland",
+
+    awayTeam: "Fulham",
+
+    homeLogo: clubLogos.Sunderland,
+
+    awayLogo: clubLogos.Fulham,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 78,
+
+    odds: 1.35,
+
+    bookingCode: "",
+
+    kickoff: "2026-08-30T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 19,
+
+    league: "Premier League",
+
+    homeTeam: "Manchester United",
+
+    awayTeam: "Ipswich",
+
+    homeLogo: clubLogos.ManchesterUnited,
+
+    awayLogo: clubLogos.Ipswich,
+
+    prediction: "Home Win",
+
+    confidence: 82,
+
+    odds: 1.45,
+
+    bookingCode: "",
+
+    kickoff: "2026-08-30T16:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 20,
+
+    league: "Premier League",
+
+    homeTeam: "Aston Villa",
+
+    awayTeam: "Arsenal",
+
+    homeLogo: clubLogos.AstonVilla,
+
+    awayLogo: clubLogos.Arsenal,
+
+    prediction: "Away win",
+
+    confidence: 85,
+
+    odds: 1.56,
+
+    bookingCode: "",
+
+    kickoff: "2026-08-31T20:00:00",
 
     status: "published",
   },
