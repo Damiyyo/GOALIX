@@ -3,6 +3,22 @@ import { LeagueClub } from "./types";
 export const ligue1Table: LeagueClub[] = [
   {
     position: 1,
+    club: "Lille",
+    shortName: "LOSC",
+    logo: "/clubs/ligue1/lille.png",
+    played: 2,
+    won: 1,
+    drawn: 1,
+    lost: 0,
+    goalsFor: 4,
+    goalsAgainst: 2,
+    goalDifference: 2,
+    points: 4,
+    form: [],
+  },
+
+  {
+    position: 2,
     club: "Marseille",
     shortName: "OM",
     logo: "/clubs/ligue1/marseille.png",
@@ -18,7 +34,7 @@ export const ligue1Table: LeagueClub[] = [
   },
 
   {
-    position: 2,
+    position: 3,
     club: "Lens",
     shortName: "RCL",
     logo: "/clubs/ligue1/lens.png",
@@ -29,22 +45,6 @@ export const ligue1Table: LeagueClub[] = [
     goalsFor: 5,
     goalsAgainst: 2,
     goalDifference: 3,
-    points: 3,
-    form: [],
-  },
-
-  {
-    position: 3,
-    club: "Lille",
-    shortName: "LOSC",
-    logo: "/clubs/ligue1/lille.png",
-    played: 1,
-    won: 1,
-    drawn: 0,
-    lost: 0,
-    goalsFor: 2,
-    goalsAgainst: 0,
-    goalDifference: 2,
     points: 3,
     form: [],
   },
@@ -83,6 +83,22 @@ export const ligue1Table: LeagueClub[] = [
 
   {
     position: 6,
+    club: "Paris Saint-Germain",
+    shortName: "PSG",
+    logo: "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg",
+    played: 2,
+    won: 0,
+    drawn: 2,
+    lost: 0,
+    goalsFor: 4,
+    goalsAgainst: 4,
+    goalDifference: 0,
+    points: 2,
+    form: [],
+  },
+
+  {
+    position: 7,
     club: "Brest",
     shortName: "SB29",
     logo: "/clubs/ligue1/brest.png",
@@ -98,26 +114,10 @@ export const ligue1Table: LeagueClub[] = [
   },
 
   {
-    position: 7,
+    position: 8,
     club: "Le Mans",
     shortName: "LEM",
     logo: "/clubs/ligue1/lemans.png",
-    played: 1,
-    won: 0,
-    drawn: 1,
-    lost: 0,
-    goalsFor: 2,
-    goalsAgainst: 2,
-    goalDifference: 0,
-    points: 1,
-    form: [],
-  },
-
-  {
-    position: 8,
-    club: "Paris Saint-Germain",
-    shortName: "PSG",
-    logo: "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg",
     played: 1,
     won: 0,
     drawn: 1,
