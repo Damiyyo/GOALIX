@@ -3,35 +3,35 @@ import Link from "next/link";
 
 const fixtures = [
   {
-    home: "Crystal Palace",
-    away: "Manchester City",
-    time: "20:00",
+    home: "Nottingham Forest",
+    away: "Tottenham",
+    time: "15:00",
     league: "Premier League",
   },
 
   {
-    home: "Barcelona",
-    away: "Atletic Bilbao",
+    home: "Espanyol",
+    away: "Sevilla",
     time: "20:00",
     league: "LaLiga",
   },
 
   {
-    home: "Bayern Munich",
-    away: "Stuttgart",
-    time: "19:30",
-    league: "Bundesliga",
+    home: "Arsenal",
+    away: "Chelsea",
+    time: "16:30",
+    league: "Premier League",
   },
 
   {
-    home: "Cagliari",
-    away: "Inter Milan",
-    time: "17:45",
+    home: "Inter Milan",
+    away: "Napoli",
+    time: "17:00",
     league: "Serie A",
   },
   {
-    home: "Monaco",
-    away: "Marseille",
+    home: "Marseille",
+    away: "Paris FC",
     time: "19:45",
     league: "Ligue1",
   },
