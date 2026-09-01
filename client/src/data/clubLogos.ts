@@ -22,7 +22,7 @@ export const clubLogos = {
       "/clubs/premier-league/Newcastle.svg.png",
     NottinghamForest:
       "/clubs/premier-league/nottingham.png",
-    Sunderland: "/clubs/premier-league/Logo_sunderland.svg.png",
+    Sunderland: "/clubs/premier-league/Logo_Sunderland.svg.png",
     Tottenham:
       "/clubs/premier-league/Tottenham.svg.png",
     Ipswich:
