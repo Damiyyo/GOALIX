@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 
 import PredictionConfidence from "./PredictionConfidence";
 import PredictionCountdown from "./PredictionCountdown";
+import PredictionModal from "./PredictionModal";
+import type { FormResult, H2HMeeting } from "./PredictionH2H";
 
 export interface PredictionMatch {
   id: number;
@@ -29,6 +32,16 @@ export interface PredictionMatch {
   kickoff: string;
 
   status: "published";
+
+  // Why-this-pick + H2H/form, all optional until the data source provides them
+  reason?: string;
+
+  h2h?: H2HMeeting[];
+
+  form?: {
+    home: FormResult[];
+    away: FormResult[];
+  };
 }
 
 interface PredictionCardProps {
@@ -38,11 +51,22 @@ interface PredictionCardProps {
 export default function PredictionCard({
   match,
 }: PredictionCardProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
+    <>
     <article
+      onClick={() => setIsOpen(true)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") setIsOpen(true);
+      }}
       className="
         group
   
+        cursor-pointer
+
         overflow-hidden
   
         rounded-2xl
@@ -284,5 +308,13 @@ export default function PredictionCard({
         />
       </div>
     </article>
+
+    {isOpen && (
+      <PredictionModal
+        match={match}
+        onClose={() => setIsOpen(false)}
+      />
+    )}
+    </>
   );
 }
