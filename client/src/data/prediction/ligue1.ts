@@ -5,235 +5,235 @@ import { PredictionMatch } from "./premierLeague";
 export const ligue1Predictions: PredictionMatch[] = [
 
   {
-    id: 411,
+    id: 421,
 
     league: "Ligue 1",
 
-    homeTeam: "LOSC",
+    homeTeam: "Toulouse",
 
-    awayTeam: "PSG",
+    awayTeam: "LOSC",
 
-    homeLogo: clubLogos.Lille,
+    homeLogo: clubLogos.Toulouse,
 
-    awayLogo: clubLogos.PSG,
+    awayLogo: clubLogos.Lille,
 
-    prediction: "OV 2.5 Goals",
+    prediction: "Lille/Draw",
 
-    confidence: 87,
+    confidence: 78,
 
-    odds: 1.74,
+    odds: 1.38,
 
     bookingCode: "",
 
-    kickoff: "2026-08-28T20:45:00",
+    kickoff: "2026-09-03T20:45:00",
 
     status: "published",
   },
 
   {
-    id: 412,
-
-    league: "Ligue 1",
-
-    homeTeam: "Strasbourg",
-
-    awayTeam: "RC Lens",
-
-    homeLogo: clubLogos.Strasbourg,
-
-    awayLogo: clubLogos.Lens,
-
-    prediction: "OV 2.5 Goals",
-
-    confidence: 86,
-
-    odds: 1.65,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-29T17:15:00",
-
-    status: "published",
-  },
-
-  {
-    id: 413,
+    id: 422,
 
     league: "Ligue 1",
 
     homeTeam: "Lyon",
 
-    awayTeam: "Le Havre",
+    awayTeam: "Auxerre",
 
     homeLogo: clubLogos.Lyon,
 
-    awayLogo: clubLogos.LeHavre,
+    awayLogo: clubLogos.Auxerre,
 
     prediction: "Home Win",
 
     confidence: 84,
 
-    odds: 1.48,
+    odds: 1.45,
 
     bookingCode: "",
 
-    kickoff: "2026-08-29T20:45:00",
+    kickoff: "2026-09-04T19:00:00",
 
     status: "published",
   },
 
   {
-    id: 414,
+    id: 423,
 
     league: "Ligue 1",
 
-    homeTeam: "Brest",
+    homeTeam: "PSG",
 
-    awayTeam: "Toulouse",
+    awayTeam: "AS Monaco",
 
-    homeLogo: clubLogos.Brest,
+    homeLogo: clubLogos.PSG,
 
-    awayLogo: clubLogos.Toulouse,
+    awayLogo: clubLogos.Monaco,
 
-    prediction: "OV 1.5 Goals",
+    prediction: "OV 2.5 Goals",
 
-    confidence: 82,
-
-    odds: 1.32,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-29T20:45:00",
-
-    status: "published",
-  },
-
-  {
-    id: 415,
-
-    league: "Ligue 1",
-
-    homeTeam: "Lorient",
-
-    awayTeam: "Troyes",
-
-    homeLogo: clubLogos.Lorient,
-
-    awayLogo: clubLogos.Troyes,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 85,
-
-    odds: 1.32,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-29T20:45:00",
-
-    status: "published",
-  },
-
-  {
-    id: 416,
-
-    league: "Ligue 1",
-
-    homeTeam: "Auxerre",
-
-    awayTeam: "Angers",
-
-    homeLogo: clubLogos.Auxerre,
-
-    awayLogo: clubLogos.Angers,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 81,
-
-    odds: 1.33,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-29T20:45:00",
-
-    status: "published",
-  },
-
-  {
-    id: 417,
-
-    league: "Ligue 1",
-
-    homeTeam: "Paris FC",
-
-    awayTeam: "OGC Nice",
-
-    homeLogo: clubLogos.ParisFc,
-
-    awayLogo: clubLogos.Nice,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 74,
+    confidence: 95,
 
     odds: 1.35,
 
     bookingCode: "",
 
-    kickoff: "2026-08-30T15:00:00",
+    kickoff: "2026-09-04T21:05:00",
 
     status: "published",
   },
 
   {
-    id: 418,
+    id: 424,
 
     league: "Ligue 1",
 
-    homeTeam: "Rennes",
+    homeTeam: "RC Lens",
+
+    awayTeam: "Lorient",
+
+    homeLogo: clubLogos.Lens,
+
+    awayLogo: clubLogos.Lorient,
+
+    prediction: "Home Win",
+
+    confidence: 81,
+
+    odds: 1.50,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T17:15:00",
+
+    status: "published",
+  },
+
+  {
+    id: 425,
+
+    league: "Ligue 1",
+
+    homeTeam: "Le Havre",
+
+    awayTeam: "Brest",
+
+    homeLogo: clubLogos.LeHavre,
+
+    awayLogo: clubLogos.Brest,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 80,
+
+    odds: 1.37,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T20:45:00",
+
+    status: "published",
+  },
+
+  {
+    id: 426,
+
+    league: "Ligue 1",
+
+    homeTeam: "Nice",
 
     awayTeam: "Le Mans FC",
 
-    homeLogo: clubLogos.Rennes,
+    homeLogo: clubLogos.Nice,
 
     awayLogo: clubLogos.LeMans,
 
     prediction: "Home Win",
 
-    confidence: 83,
+    confidence: 85,
 
-    odds: 1.48,
+    odds: 1.91,
 
     bookingCode: "",
 
-    kickoff: "2026-08-30T17:15:00",
+    kickoff: "2026-09-05T20:45:00",
 
     status: "published",
   },
 
   {
-    id: 419,
+    id: 427,
 
     league: "Ligue 1",
 
-    homeTeam: "AS Monaco",
+    homeTeam: "Troyes",
 
-    awayTeam: "Marseille",
+    awayTeam: "Strasbourg",
 
-    homeLogo: clubLogos.Monaco,
+    homeLogo: clubLogos.Troyes,
 
-    awayLogo: clubLogos.Marseille,
+    awayLogo: clubLogos.Strasbourg,
 
-    prediction: "OV 2.5 Goals",
+    prediction: "Strasbourg/Draw",
 
-    confidence: 79,
+    confidence: 76,
 
-    odds: 1.57,
+    odds: 1.40,
 
     bookingCode: "",
 
-    kickoff: "2026-08-30T20:45:00",
+    kickoff: "2026-09-06T15:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 428,
+
+    league: "Ligue 1",
+
+    homeTeam: "Angers",
+
+    awayTeam: "Rennes",
+
+    homeLogo: clubLogos.Angers,
+
+    awayLogo: clubLogos.Rennes,
+
+    prediction: "Rennes/Draw",
+
+    confidence: 79,
+
+    odds: 1.30,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-06T17:15:00",
+
+    status: "published",
+  },
+
+  {
+    id: 429,
+
+    league: "Ligue 1",
+
+    homeTeam: "Marseille",
+
+    awayTeam: "Paris FC",
+
+    homeLogo: clubLogos.Marseille,
+
+    awayLogo: clubLogos.ParisFc,
+
+    prediction: "Home Win",
+
+    confidence: 86,
+
+    odds: 1.82,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-06T20:45:00",
 
     status: "published",
   },
