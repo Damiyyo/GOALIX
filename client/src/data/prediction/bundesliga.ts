@@ -1,131 +1,219 @@
 import { clubLogos } from "../clubLogos";
 import { PredictionMatch } from "./premierLeague";
-
 export const bundesligaPredictions: PredictionMatch[] = [
   {
-    id: 201,
+    id: 210,
+
     league: "Bundesliga",
-    homeTeam: "Bayern Munich",
-    awayTeam: "Stuttgart",
-    homeLogo: clubLogos.BayernMunich,
-    awayLogo: clubLogos.Stuttgart,
-    prediction: "Home Win & OV 2.5",
-    confidence: 90,
-    odds: 1.47,
-    bookingCode: "",
-    kickoff: "2026-08-28T20:30:00",
-    status: "published",
-  },
-  {
-    id: 202,
-    league: "Bundesliga",
-    homeTeam: "Dortmund",
-    awayTeam: "Hamburg",
-    homeLogo: clubLogos.Dortmund,
-    awayLogo: clubLogos.Hamburg,
-    prediction: "Home OV 1.5",
+
+    homeTeam: "Stuttgart",
+    awayTeam: "Cologne",
+
+    homeLogo: clubLogos.Stuttgart,
+    awayLogo: clubLogos.Cologne,
+
+    prediction: "BTTS",
+
     confidence: 78,
-    odds: 1.46,
+
+    odds: 1.52,
+
     bookingCode: "",
-    kickoff: "2026-08-29T18:30:00",
+
+    kickoff: "2026-09-04T20:30:00",
+
     status: "published",
   },
+
   {
-    id: 203,
+    id: 211,
+
     league: "Bundesliga",
-    homeTeam: "Leipzig",
-    awayTeam: "Mochengladbach",
-    homeLogo: clubLogos.Leipzig,
-    awayLogo: clubLogos.Mochengladbach,
-    prediction: "Home Win",
-    confidence: 86,
-    odds: 1.59,
+
+    homeTeam: "Paderborn",
+    awayTeam: "Freiburg",
+
+    homeLogo: clubLogos.Paderborn,
+    awayLogo: clubLogos.Freiburg,
+
+    prediction: "OV 2.5 Goals",
+
+    confidence: 82,
+
+    odds: 1.66,
+
     bookingCode: "",
-    kickoff: "2026-08-29T15:30:00",
+
+    kickoff: "2026-09-05T15:30:00",
+
     status: "published",
   },
+
   {
-    id: 204,
+    id: 212,
+
     league: "Bundesliga",
-    homeTeam: "Freiburg",
-    awayTeam: "Werder Bremen",
-    homeLogo: clubLogos.Freiburg,
-    awayLogo: clubLogos.Bremen,
-    prediction: "OV 2.5",
+
+    homeTeam: "Werder Bremen",
+    awayTeam: "Leipzig",
+
+    homeLogo: clubLogos.Bremen,
+    awayLogo: clubLogos.Leipzig,
+
+    prediction: "BTTS",
+
     confidence: 80,
-    odds: 1.74,
+
+    odds: 1.51,
+
     bookingCode: "",
-    kickoff: "2026-08-30T15:30:00",
+
+    kickoff: "2026-09-05T15:30:00",
+
     status: "published",
   },
+
   {
-    id: 205,
+    id: 213,
+
     league: "Bundesliga",
-    homeTeam: "Augsburg",
-    awayTeam: "Schalk",
-    homeLogo: clubLogos.Augsburg,
-    awayLogo: clubLogos.Schalke,
-    prediction: "BTTS",
-    confidence: 75,
-    odds: 1.54,
-    bookingCode: "",
-    kickoff: "2026-08-30T17:30:00", 
-    status: "published",
-  },
-  {
-    id: 206,
-    league: "Bundesliga",
-    homeTeam: "Mainz",
-    awayTeam: "Padeborn",
-    homeLogo: clubLogos.Mainz,
-    awayLogo: clubLogos.Paderborn,
-    prediction: "OV 2.5",
-    confidence: 86,
-    odds: 1.68,
-    bookingCode: "",
-    kickoff: "2026-08-29T15:30:00",
-    status: "published",
-  },
-  {
-    id: 207,
-    league: "Bundesliga",
-    homeTeam: "Union Berlin",
-    awayTeam: "Frankfurt",
-    homeLogo: clubLogos.UnionBerlin,
-    awayLogo: clubLogos.Frankfurt,
-    prediction: "BTTS",
-    confidence: 84,
-    odds: 1.61,
-    bookingCode: "",
-    kickoff: "2026-08-29T15:30:00",
-    status: "published",
-  },
-  {
-    id: 208,
-    league: "Bundesliga",
-    homeTeam: "Cologne",
-    awayTeam: "Hoffenhiem",
-    homeLogo: clubLogos.Cologne,
-    awayLogo: clubLogos.Hoffenhiem,
-    prediction: "OV 2.5",
-    confidence: 88,
-    odds: 1.56,
-    bookingCode: "",
-    kickoff: "2026-08-29T15:30:00",
-    status: "published",
-  },
-  {
-    id: 209,
-    league: "Bundesliga",
-    homeTeam: "Elversborg",
-    awayTeam: "Leverkusen",
-    homeLogo: clubLogos.Elversborg,
-    awayLogo: clubLogos.Leverkusen,
-    prediction: "Away Win",
-    confidence: 86,
+
+    homeTeam: "Mochengladbach",
+    awayTeam: "Elversborg",
+
+    homeLogo: clubLogos.Mochengladbach,
+    awayLogo: clubLogos.Elversborg,
+
+    prediction: "OV 2.5 Goals",
+
+    confidence: 85,
+
     odds: 1.59,
+
     bookingCode: "",
-    kickoff: "2026-08-29T15:30:00",
+
+    kickoff: "2026-09-05T15:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 214,
+
+    league: "Bundesliga",
+
+    homeTeam: "Leverkusen",
+    awayTeam: "Union Berlin",
+
+    homeLogo: clubLogos.Leverkusen,
+    awayLogo: clubLogos.UnionBerlin,
+
+    prediction: "Home Win",
+
+    confidence: 84,
+
+    odds: 1.48,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T15:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 215,
+
+    league: "Bundesliga",
+
+    homeTeam: "Hoffenhiem",
+    awayTeam: "Dortmund",
+
+    homeLogo: clubLogos.Hoffenhiem,
+    awayLogo: clubLogos.Dortmund,
+
+    prediction: "OV 2.5",
+
+    confidence: 76,
+
+    odds: 1.49,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T15:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 216,
+
+    league: "Bundesliga",
+
+    homeTeam: "Schalke",
+    awayTeam: "Bayern Munich",
+
+    homeLogo: clubLogos.Schalke,
+    awayLogo: clubLogos.BayernMunich,
+
+    prediction: "Away 0V 2.5",
+
+    confidence: 90,
+
+    odds: 1.50,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T18:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 217,
+
+    league: "Bundesliga",
+
+    homeTeam: "Hamburg",
+    awayTeam: "Mainz",
+
+    homeLogo: clubLogos.Hamburg,
+    awayLogo: clubLogos.Mainz,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 81,
+
+    odds: 1.25,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-06T13:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 218,
+
+    league: "Bundesliga",
+
+    homeTeam: "Frankfurt",
+    awayTeam: "Augsburg",
+
+    homeLogo: clubLogos.Frankfurt,
+    awayLogo: clubLogos.Augsburg,
+
+    prediction: "Home Win",
+
+    confidence: 79,
+
+    odds: 1.98,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-06T15:30:00",
+
     status: "published",
   },
 ];
