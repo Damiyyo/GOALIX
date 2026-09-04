@@ -5,95 +5,173 @@ import { PredictionMatch } from "./premierLeague";
 export const serieAPredictions: PredictionMatch[] = [
 
   {
-    id: 311,
+    id: 321,
 
     league: "Serie A",
 
-    homeTeam: "AC Milan",
+    homeTeam: "Genoa",
 
-    awayTeam: "Venezia",
+    awayTeam: "Como",
 
-    homeLogo: clubLogos.Milan,
+    homeLogo: clubLogos.Genoa,
 
-    awayLogo: clubLogos.Venezia,
-
-    prediction: "Home Win",
-
-    confidence: 88,
-
-    odds: 1.42,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-28T20:45:00",
-
-    status: "published",
-  },
-
-  {
-    id: 312,
-
-    league: "Serie A",
-
-    homeTeam: "Fiorentina",
-
-    awayTeam: "Frosinone",
-
-    homeLogo: clubLogos.Fiorentina,
-
-    awayLogo: clubLogos.Frosinine,
-
-    prediction: "Home Win",
-
-    confidence: 78,
-
-    odds: 1.67,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-29T18:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 313,
-
-    league: "Serie A",
-
-    homeTeam: "Monza",
-
-    awayTeam: "Udinese",
-
-    homeLogo: clubLogos.Monza,
-
-    awayLogo: clubLogos.Udinese,
+    awayLogo: clubLogos.Como,
 
     prediction: "OV 1.5 Goals",
 
     confidence: 82,
 
-    odds: 1.40,
+    odds: 1.35,
 
     bookingCode: "",
 
-    kickoff: "2026-08-29T18:30:00",
+    kickoff: "2026-09-04T19:45:00",
 
     status: "published",
   },
 
   {
-    id: 314,
+    id: 322,
 
     league: "Serie A",
 
-    homeTeam: "Sassuolo",
+    homeTeam: "Fiorentina",
 
     awayTeam: "Torino",
 
-    homeLogo: clubLogos.Sassuolo,
+    homeLogo: clubLogos.Fiorentina,
 
     awayLogo: clubLogos.Torino,
+
+    prediction: "OV 2.5",
+
+    confidence: 78,
+
+    odds: 2.15,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 323,
+
+    league: "Serie A",
+
+    homeTeam: "Inter",
+
+    awayTeam: "Napoli",
+
+    homeLogo: clubLogos.Inter,
+
+    awayLogo: clubLogos.Napoli,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 86,
+
+    odds: 1.34,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T17:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 324,
+
+    league: "Serie A",
+
+    homeTeam: "Roma",
+
+    awayTeam: "Atalanta",
+
+    homeLogo: clubLogos.Roma,
+
+    awayLogo: clubLogos.Atalanta,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 84,
+
+    odds: 1.30,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-05T19:45:00",
+
+    status: "published",
+  },
+
+  {
+    id: 325,
+
+    league: "Serie A",
+
+    homeTeam: "Frosinone",
+
+    awayTeam: "Venezia",
+
+    homeLogo: clubLogos.Frosinine,
+
+    awayLogo: clubLogos.Venezia,
+
+    prediction: "OV 2.5 Goals",
+
+    confidence: 81,
+
+    odds: 1.84,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-06T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 326,
+
+    league: "Serie A",
+
+    homeTeam: "Parma",
+
+    awayTeam: "Monza",
+
+    homeLogo: clubLogos.Parma,
+
+    awayLogo: clubLogos.Monza,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 83,
+
+    odds: 1.42,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-06T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 327,
+
+    league: "Serie A",
+
+    homeTeam: "Bologna",
+
+    awayTeam: "Sassuolo",
+
+    homeLogo: clubLogos.Bologna,
+
+    awayLogo: clubLogos.Sassuolo,
 
     prediction: "OV 1.5 Goals",
 
@@ -103,163 +181,85 @@ export const serieAPredictions: PredictionMatch[] = [
 
     bookingCode: "",
 
-    kickoff: "2026-08-29T18:30:00",
+    kickoff: "2026-09-06T17:00:00",
 
     status: "published",
   },
 
   {
-    id: 315,
+    id: 328,
 
     league: "Serie A",
 
     homeTeam: "Juventus",
 
-    awayTeam: "Parma",
+    awayTeam: "AC Milan",
 
     homeLogo: clubLogos.Juventus,
 
-    awayLogo: clubLogos.Parma,
+    awayLogo: clubLogos.Milan,
 
-    prediction: "Home Win",
+    prediction: "BTTS",
 
-    confidence: 87,
+    confidence: 82,
 
-    odds: 1.24,
+    odds: 1.90,
 
     bookingCode: "",
 
-    kickoff: "2026-08-29T20:45:00",
+    kickoff: "2026-09-06T19:45:00",
 
     status: "published",
   },
 
   {
-    id: 316,
-
-    league: "Serie A",
-
-    homeTeam: "Napoli",
-
-    awayTeam: "Como",
-
-    homeLogo: clubLogos.Napoli,
-
-    awayLogo: clubLogos.Como,
-
-    prediction: "OV 1.5 goals",
-
-    confidence: 89,
-
-    odds: 1.43,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-30T18:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 317,
+    id: 329,
 
     league: "Serie A",
 
     homeTeam: "Cagliari",
 
-    awayTeam: "Inter",
+    awayTeam: "Lecce",
 
     homeLogo: clubLogos.Cagliari,
 
-    awayLogo: clubLogos.Inter,
+    awayLogo: clubLogos.Lecce,
 
-    prediction: "Away Win",
+    prediction: "OV 1.5",
 
-    confidence: 88,
+    confidence: 79,
+
+    odds: 1.45,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-07T17:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 330,
+
+    league: "Serie A",
+
+    homeTeam: "Udinese",
+
+    awayTeam: "Lazio",
+
+    homeLogo: clubLogos.Udinese,
+
+    awayLogo: clubLogos.Lazio,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 80,
 
     odds: 1.43,
 
     bookingCode: "",
 
-    kickoff: "2026-08-30T20:45:00",
-
-    status: "published",
-  },
-
-  {
-    id: 318,
-
-    league: "Serie A",
-
-    homeTeam: "Lazio",
-
-    awayTeam: "Genoa",
-
-    homeLogo: clubLogos.Lazio,
-
-    awayLogo: clubLogos.Genoa,
-
-    prediction: "Home 1UP",
-
-    confidence: 73,
-
-    odds: 1.55,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-30T20:45:00",
-
-    status: "published",
-  },
-
-  {
-    id: 319,
-
-    league: "Serie A",
-
-    homeTeam: "Lecce",
-
-    awayTeam: "Roma",
-
-    homeLogo: clubLogos.Lecce,
-
-    awayLogo: clubLogos.Roma,
-
-    prediction: "Away Win",
-
-    confidence: 84,
-
-    odds: 1.52,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-31T18:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 320,
-
-    league: "Serie A",
-
-    homeTeam: "Atalanta",
-
-    awayTeam: "Bologna",
-
-    homeLogo: clubLogos.Atalanta,
-
-    awayLogo: clubLogos.Bologna,
-
-    prediction: "Home/draw",
-
-    confidence: 85,
-
-    odds: 1.28,
-
-    bookingCode: "",
-
-    kickoff: "2026-08-31T20:45:00",
+    kickoff: "2026-09-07T19:45:00",
 
     status: "published",
   },
