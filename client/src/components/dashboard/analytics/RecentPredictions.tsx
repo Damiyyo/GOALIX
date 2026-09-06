@@ -31,7 +31,7 @@ const predictions = [
       away: "Bayern Munich",
       prediction: "Away Win & OV 2.5",
       confidence: "89%",
-      status: "Not Started",
+      status: "Lost",
       score: "0 - 0",
     },
     {
@@ -39,8 +39,8 @@ const predictions = [
       away: "Napoli",
       prediction: "BTTS",
       confidence: "70%",
-      status: "Not Started",
-      score: "0 - 0",
+      status: "Won",
+      score: "3 - 2",
     },
   ];
 
