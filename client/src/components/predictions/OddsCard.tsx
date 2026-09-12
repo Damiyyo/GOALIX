@@ -9,7 +9,7 @@ interface OddsCardProps {
 
 const confidenceColors = (confidence: number) => {
   if (confidence >= 90) return "text-green-400";
-  if (confidence >= 80) return "text-yellow-400";
+  if (confidence >= 70) return "text-yellow-400";
   return "text-red-400";
 };
 

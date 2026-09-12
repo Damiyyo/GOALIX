@@ -3,265 +3,243 @@ import { clubLogos } from "../clubLogos";
 import { PredictionMatch } from "./premierLeague";
 
 export const laLigaPredictions: PredictionMatch[] = [
-
   {
-    id: 221,
+    id: 231,
 
     league: "La Liga",
 
-    homeTeam: "Real Betis",
+    homeTeam: "Sevilla",
+    awayTeam: "Valencia",
 
-    awayTeam: "Real Madrid",
+    homeLogo: clubLogos.Sevilla,
+    awayLogo: clubLogos.Valencia,
 
-    homeLogo: clubLogos.RealBetis,
+    prediction: "Home Win",
 
-    awayLogo: clubLogos.RealMadrid,
+    confidence: 78,
 
-    prediction: "Real Madrid Win",
+    odds: 1.85,
 
-    confidence: 89,
+    bookingCode: "",
+
+    kickoff: "2026-09-11T21:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 232,
+
+    league: "La Liga",
+
+    homeTeam: "Racing Santander",
+    awayTeam: "Alaves",
+
+    homeLogo: clubLogos.RacingSantader,
+    awayLogo: clubLogos.Alaves,
+
+    prediction: "Alaves/Draw",
+
+    confidence: 81,
+
+    odds: 1.52,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-12T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 233,
+
+    league: "La Liga",
+
+    homeTeam: "Osasuna",
+    awayTeam: "Espanyol",
+
+    homeLogo: clubLogos.Osasuna,
+    awayLogo: clubLogos.Espanyol,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 82,
+
+    odds: 1.38,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-12T16:15:00",
+
+    status: "published",
+  },
+
+  {
+    id: 234,
+
+    league: "La Liga",
+
+    homeTeam: "Athletic Bilbao",
+    awayTeam: "Elche",
+
+    homeLogo: clubLogos.AthleticBilbao,
+    awayLogo: clubLogos.Elche,
+
+    prediction: "Home Win",
+
+    confidence: 83,
 
     odds: 1.48,
 
     bookingCode: "",
 
-    kickoff: "2026-09-04T21:00:00",
+    kickoff: "2026-09-12T18:30:00",
 
     status: "published",
   },
 
   {
-    id: 222,
+    id: 235,
 
     league: "La Liga",
 
-    homeTeam: "Athletic Bilbao",
+    homeTeam: "Real Madrid",
+    awayTeam: "Rayo Vallecano",
 
-    awayTeam: "Atletico Madrid",
+    homeLogo: clubLogos.RealMadrid,
+    awayLogo: clubLogos.RayoVallecano,
 
-    homeLogo: clubLogos.AthleticBilbao,
+    prediction: "Home Win",
 
-    awayLogo: clubLogos.AtleticoMadrid,
+    confidence: 91,
 
-    prediction: "Home or Away",
-
-    confidence: 82,
-
-    odds: 1.33,
+    odds: 1.15,
 
     bookingCode: "",
 
-    kickoff: "2026-09-05T16:15:00",
+    kickoff: "2026-09-12T21:00:00",
 
     status: "published",
   },
 
   {
-    id: 223,
+    id: 236,
 
     league: "La Liga",
 
-    homeTeam: "Rayo Vallecano",
+    homeTeam: "Celta Vigo",
+    awayTeam: "Malaga",
 
-    awayTeam: "Racing Santander",
+    homeLogo: clubLogos.CeltaVigo,
+    awayLogo: clubLogos.Malaga,
 
-    homeLogo: clubLogos.RayoVallecano,
+    prediction: "OV 1.5 Goals",
 
-    awayLogo: clubLogos.RacingSantader,
+    confidence: 79,
 
-    prediction: "Over 1.5 Goals",
-
-    confidence: 81,
-
-    odds: 1.31,
+    odds: 1.36,
 
     bookingCode: "",
 
-    kickoff: "2026-09-05T18:30:00",
+    kickoff: "2026-09-13T14:00:00",
 
     status: "published",
   },
 
   {
-    id: 224,
+    id: 237,
 
     league: "La Liga",
 
-    homeTeam: "Villarreal",
-
-    awayTeam: "Deportivo",
-
-    homeLogo: clubLogos.Villarreal,
-
-    awayLogo: clubLogos.Deportivo,
-
-    prediction: "OV 2.5",
-
-    confidence: 83,
-
-    odds: 1.75,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-05T21:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 225,
-
-    league: "La Liga",
-
-    homeTeam: "Valencia",
-
+    homeTeam: "Levante",
     awayTeam: "Barcelona",
 
-    homeLogo: clubLogos.Valencia,
-
+    homeLogo: clubLogos.Levante,
     awayLogo: clubLogos.Barcelona,
 
     prediction: "Barcelona Win",
 
     confidence: 88,
 
-    odds: 1.30,
+    odds: 1.17,
 
     bookingCode: "",
 
-    kickoff: "2026-09-06T16:15:00",
+    kickoff: "2026-09-13T16:15:00",
 
     status: "published",
   },
 
   {
-    id: 226,
-
-    league: "La Liga",
-
-    homeTeam: "Alaves",
-
-    awayTeam: "Osasuna",
-
-    homeLogo: clubLogos.Alaves,
-
-    awayLogo: clubLogos.Osasuna,
-
-    prediction: "Alaves/Draw",
-
-    confidence: 78,
-
-    odds: 1.34,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-06T18:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 227,
-
-    league: "La Liga",
-
-    homeTeam: "Malaga",
-
-    awayTeam: "Levante",
-
-    homeLogo: clubLogos.Malaga,
-
-    awayLogo: clubLogos.Levante,
-
-    prediction: "Over 1.5 Goals",
-
-    confidence: 79,
-
-    odds: 1.31,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-06T18:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 228,
-
-    league: "La Liga",
-
-    homeTeam: "Espanyol",
-
-    awayTeam: "Sevilla",
-
-    homeLogo: clubLogos.Espanyol,
-
-    awayLogo: clubLogos.Sevilla,
-
-    prediction: "OV 1.5",
-
-    confidence: 76,
-
-    odds: 1.45,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-06T21:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 229,
+    id: 238,
 
     league: "La Liga",
 
     homeTeam: "Getafe",
-
-    awayTeam: "Celta Vigo",
+    awayTeam: "Deportivo",
 
     homeLogo: clubLogos.Getafe,
+    awayLogo: clubLogos.Deportivo,
 
-    awayLogo: clubLogos.CeltaVigo,
+    prediction: "Getafe/Draw",
 
-    prediction: "Getafe/draw",
+    confidence: 80,
 
-    confidence: 83,
-
-    odds: 1.32,
+    odds: 1.38,
 
     bookingCode: "",
 
-    kickoff: "2026-09-07T19:00:00",
+    kickoff: "2026-09-13T18:30:00",
 
     status: "published",
   },
 
   {
-    id: 230,
+    id: 239,
 
     league: "La Liga",
 
-    homeTeam: "Elche",
+    homeTeam: "Real Sociedad",
+    awayTeam: "Atletico Madrid",
 
-    awayTeam: "Real Sociedad",
+    homeLogo: clubLogos.RealSociedad,
+    awayLogo: clubLogos.AtleticoMadrid,
 
-    homeLogo: clubLogos.Elche,
+    prediction: "OV 2.5 Goals",
 
-    awayLogo: clubLogos.RealSociedad,
+    confidence: 81,
 
-    prediction: "Away win",
-
-    confidence: 80,
-
-    odds: 2.45,
+    odds: 1.65,
 
     bookingCode: "",
 
-    kickoff: "2026-09-07T21:30:00",
+    kickoff: "2026-09-13T21:00:00",
 
     status: "published",
   },
 
+  {
+    id: 240,
+
+    league: "La Liga",
+
+    homeTeam: "Villarreal",
+    awayTeam: "Real Betis",
+
+    homeLogo: clubLogos.Villarreal,
+    awayLogo: clubLogos.RealBetis,
+
+    prediction: "BTTS",
+
+    confidence: 82,
+
+    odds: 1.55,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-14T21:00:00",
+
+    status: "published",
+  },
 ];

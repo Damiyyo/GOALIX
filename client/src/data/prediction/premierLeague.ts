@@ -26,74 +26,43 @@ export interface PredictionMatch {
   status: "published";
 }
 
-export const premierLeaguePredictions: PredictionMatch[] =
-[
+export const premierLeaguePredictions: PredictionMatch[] = [
   {
-    id: 21,
+    id: 31,
 
     league: "Premier League",
 
-    homeTeam: "Ipswich",
+    homeTeam: "Bournemouth",
+    awayTeam: "Brentford",
 
-    awayTeam: "Liverpool",
+    homeLogo: clubLogos.Bournemouth,
+    awayLogo: clubLogos.Brentford,
 
-    homeLogo: clubLogos.Ipswich,
+    prediction: "OV 2.5 Goals",
 
-    awayLogo: clubLogos.Liverpool,
+    confidence: 80,
 
-    prediction: "Away Win",
-
-    confidence: 86,
-
-    odds: 1.55,
+    odds: 1.61,
 
     bookingCode: "",
 
-    kickoff: "2026-09-04T20:00:00",
+    kickoff: "2026-09-12T15:00:00",
 
     status: "published",
   },
 
   {
-    id: 22,
+    id: 32,
 
     league: "Premier League",
 
-    homeTeam: "Newcastle United",
+    homeTeam: "Aston Villa",
+    awayTeam: "Nottingham Forest",
 
-    awayTeam: "Bournemouth",
+    homeLogo: clubLogos.AstonVilla,
+    awayLogo: clubLogos.NottinghamForest,
 
-    homeLogo: clubLogos.NewcastleUnited,
-
-    awayLogo: clubLogos.Bournemouth,
-
-    prediction: "OV 2.5",
-
-    confidence: 78,
-
-    odds: 1.60,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-05T12:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 23,
-
-    league: "Premier League",
-
-    homeTeam: "Brentford",
-
-    awayTeam: "Sunderland",
-
-    homeLogo: clubLogos.Brentford,
-
-    awayLogo: clubLogos.Sunderland,
-
-    prediction: "Home win & OV 2.5",
+    prediction: "Home Win",
 
     confidence: 82,
 
@@ -101,189 +70,199 @@ export const premierLeaguePredictions: PredictionMatch[] =
 
     bookingCode: "",
 
-    kickoff: "2026-09-05T15:00:00",
+    kickoff: "2026-09-12T15:00:00",
 
     status: "published",
   },
 
   {
-    id: 24,
+    id: 33,
 
     league: "Premier League",
 
-    homeTeam: "Brighton",
+    homeTeam: "Chelsea",
+    awayTeam: "Hull City",
 
-    awayTeam: "Leeds United",
+    homeLogo: clubLogos.Chelsea,
+    awayLogo: clubLogos.HullCity,
 
-    homeLogo: clubLogos.Brighton,
+    prediction: "Home Win",
 
-    awayLogo: clubLogos.LeedsUnited,
+    confidence: 89,
+
+    odds: 1.27,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-12T15:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 34,
+
+    league: "Premier League",
+
+    homeTeam: "Crystal Palace",
+    awayTeam: "Ipswich",
+
+    homeLogo: clubLogos.CrystalPalace,
+    awayLogo: clubLogos.Ipswich,
+
+    prediction: "Home Win",
+
+    confidence: 78,
+
+    odds: 1.94,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-12T15:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 35,
+
+    league: "Premier League",
+
+    homeTeam: "Liverpool",
+    awayTeam: "Fulham",
+
+    homeLogo: clubLogos.Liverpool,
+    awayLogo: clubLogos.Fulham,
+
+    prediction: "Home Win",
+
+    confidence: 90,
+
+    odds: 1.47,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-12T15:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 36,
+
+    league: "Premier League",
+
+    homeTeam: "Tottenham",
+    awayTeam: "Everton",
+
+    homeLogo: clubLogos.Tottenham,
+    awayLogo: clubLogos.Everton,
 
     prediction: "BTTS",
 
-    confidence: 76,
+    confidence: 79,
 
-    odds: 1.74,
+    odds: 1.76,
 
     bookingCode: "",
 
-    kickoff: "2026-09-05T15:00:00",
+    kickoff: "2026-09-12T17:30:00",
 
     status: "published",
   },
 
   {
-    id: 25,
+    id: 37,
 
     league: "Premier League",
 
-    homeTeam: "Fulham",
+    homeTeam: "Sunderland",
+    awayTeam: "Arsenal",
 
-    awayTeam: "Crystal Palace",
+    homeLogo: clubLogos.Sunderland,
+    awayLogo: clubLogos.Arsenal,
 
-    homeLogo: clubLogos.Fulham,
+    prediction: "Away Win",
 
-    awayLogo: clubLogos.CrystalPalace,
+    confidence: 87,
 
-    prediction: "OV 1.5",
-
-    confidence: 74,
-
-    odds: 1.30,
+    odds: 1.52,
 
     bookingCode: "",
 
-    kickoff: "2026-09-05T15:00:00",
+    kickoff: "2026-09-12T20:00:00",
 
     status: "published",
   },
 
   {
-    id: 26,
+    id: 38,
 
     league: "Premier League",
 
-    homeTeam: "Manchester City",
+    homeTeam: "Coventry",
+    awayTeam: "Brighton",
 
-    awayTeam: "Coventry",
+    homeLogo: clubLogos.Coventry,
+    awayLogo: clubLogos.Brighton,
 
-    homeLogo: clubLogos.ManchesterCity,
-
-    awayLogo: clubLogos.Coventry,
-
-    prediction: "Home Win & OV 2.5",
-
-    confidence: 91,
-
-    odds: 1.45,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-05T15:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 27,
-
-    league: "Premier League",
-
-    homeTeam: "Nottingham Forest",
-
-    awayTeam: "Tottenham",
-
-    homeLogo: clubLogos.NottinghamForest,
-
-    awayLogo: clubLogos.Tottenham,
-
-    prediction: "OV 1.5",
-
-    confidence: 81,
-
-    odds: 1.32,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-05T15:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 28,
-
-    league: "Premier League",
-
-    homeTeam: "Hull City",
-
-    awayTeam: "Aston Villa",
-
-    homeLogo: clubLogos.HullCity,
-
-    awayLogo: clubLogos.AstonVilla,
-
-    prediction: "Home OV 0.5",
-
-    confidence: 80,
-
-    odds: 1.50,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-05T17:30:00",
-
-    status: "published",
-  },
-
-  {
-    id: 29,
-
-    league: "Premier League",
-
-    homeTeam: "Everton",
-
-    awayTeam: "Manchester United",
-
-    homeLogo: clubLogos.Everton,
-
-    awayLogo: clubLogos.ManchesterUnited,
-
-    prediction: "OV 2.5 Goals",
-
-    confidence: 77,
-
-    odds: 1.72,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-06T14:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 30,
-
-    league: "Premier League",
-
-    homeTeam: "Arsenal",
-
-    awayTeam: "Chelsea",
-
-    homeLogo: clubLogos.Arsenal,
-
-    awayLogo: clubLogos.Chelsea,
-
-    prediction: "Correct Score 2-1",
+    prediction: "OV 1.5 Goals",
 
     confidence: 83,
 
-    odds: 8.20,
+    odds: 1.25,
 
     bookingCode: "",
 
-    kickoff: "2026-09-06T16:30:00",
+    kickoff: "2026-09-13T14:00:00",
+
+    status: "published",
+  },
+
+  {
+    id: 39,
+
+    league: "Premier League",
+
+    homeTeam: "Manchester United",
+    awayTeam: "Manchester City",
+
+    homeLogo: clubLogos.ManchesterUnited,
+    awayLogo: clubLogos.ManchesterCity,
+
+    prediction: "BTTS",
+
+    confidence: 81,
+
+    odds: 1.49,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-13T16:30:00",
+
+    status: "published",
+  },
+
+  {
+    id: 40,
+
+    league: "Premier League",
+
+    homeTeam: "Leeds United",
+    awayTeam: "Newcastle United",
+
+    homeLogo: clubLogos.LeedsUnited,
+    awayLogo: clubLogos.NewcastleUnited,
+
+    prediction: "OV 1.5 Goals",
+
+    confidence: 82,
+
+    odds: 1.25,
+
+    bookingCode: "",
+
+    kickoff: "2026-09-14T20:00:00",
 
     status: "published",
   },
