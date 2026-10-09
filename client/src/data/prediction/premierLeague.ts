@@ -28,242 +28,143 @@ export interface PredictionMatch {
 
 export const premierLeaguePredictions: PredictionMatch[] = [
   {
-    id: 31,
-
+    id: 41,
     league: "Premier League",
-
-    homeTeam: "Bournemouth",
-    awayTeam: "Brentford",
-
-    homeLogo: clubLogos.Bournemouth,
-    awayLogo: clubLogos.Brentford,
-
-    prediction: "OV 2.5 Goals",
-
-    confidence: 80,
-
-    odds: 1.61,
-
+    homeTeam: "Arsenal",
+    awayTeam: "Leeds United",
+    homeLogo: clubLogos.Arsenal,
+    awayLogo: clubLogos.LeedsUnited,
+    prediction: "Home Win",
+    confidence: 82,
+    odds: 1.45,
     bookingCode: "",
-
-    kickoff: "2026-09-12T15:00:00",
-
+    kickoff: "2026-10-10T12:30:00",
     status: "published",
   },
-
   {
-    id: 32,
-
+    id: 42,
     league: "Premier League",
-
     homeTeam: "Aston Villa",
-    awayTeam: "Nottingham Forest",
-
+    awayTeam: "Brentford",
     homeLogo: clubLogos.AstonVilla,
-    awayLogo: clubLogos.NottinghamForest,
-
-    prediction: "Home Win",
-
-    confidence: 82,
-
-    odds: 2.35,
-
+    awayLogo: clubLogos.Brentford,
+    prediction: "BTTS",
+    confidence: 76,
+    odds: 1.60,
     bookingCode: "",
-
-    kickoff: "2026-09-12T15:00:00",
-
+    kickoff: "2026-10-10T15:00:00",
     status: "published",
   },
-
   {
-    id: 33,
-
+    id: 43,
     league: "Premier League",
-
     homeTeam: "Chelsea",
-    awayTeam: "Hull City",
-
+    awayTeam: "Bournemouth",
     homeLogo: clubLogos.Chelsea,
-    awayLogo: clubLogos.HullCity,
-
-    prediction: "Home Win",
-
-    confidence: 89,
-
-    odds: 1.27,
-
+    awayLogo: clubLogos.Bournemouth,
+    prediction: "OV 2.5 Goals",
+    confidence: 85,
+    odds: 1.50,
     bookingCode: "",
-
-    kickoff: "2026-09-12T15:00:00",
-
+    kickoff: "2026-10-10T15:00:00",
     status: "published",
   },
-
   {
-    id: 34,
-
+    id: 44,
     league: "Premier League",
-
-    homeTeam: "Crystal Palace",
-    awayTeam: "Ipswich",
-
-    homeLogo: clubLogos.CrystalPalace,
-    awayLogo: clubLogos.Ipswich,
-
-    prediction: "Home Win",
-
-    confidence: 78,
-
-    odds: 1.94,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-12T15:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 35,
-
-    league: "Premier League",
-
-    homeTeam: "Liverpool",
+    homeTeam: "Ipswich Town",
     awayTeam: "Fulham",
-
-    homeLogo: clubLogos.Liverpool,
+    homeLogo: clubLogos.Ipswich,
     awayLogo: clubLogos.Fulham,
-
-    prediction: "Home Win",
-
-    confidence: 90,
-
-    odds: 1.47,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-12T15:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 36,
-
-    league: "Premier League",
-
-    homeTeam: "Tottenham",
-    awayTeam: "Everton",
-
-    homeLogo: clubLogos.Tottenham,
-    awayLogo: clubLogos.Everton,
-
     prediction: "BTTS",
-
-    confidence: 79,
-
-    odds: 1.76,
-
+    confidence: 73,
+    odds: 1.65,
     bookingCode: "",
-
-    kickoff: "2026-09-12T17:30:00",
-
+    kickoff: "2026-10-10T15:00:00",
     status: "published",
   },
-
   {
-    id: 37,
-
+    id: 45,
     league: "Premier League",
-
     homeTeam: "Sunderland",
-    awayTeam: "Arsenal",
-
-    homeLogo: clubLogos.Sunderland,
-    awayLogo: clubLogos.Arsenal,
-
-    prediction: "Away Win",
-
-    confidence: 87,
-
-    odds: 1.52,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-12T20:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 38,
-
-    league: "Premier League",
-
-    homeTeam: "Coventry",
     awayTeam: "Brighton",
-
-    homeLogo: clubLogos.Coventry,
+    homeLogo: clubLogos.Sunderland,
     awayLogo: clubLogos.Brighton,
-
     prediction: "OV 1.5 Goals",
-
-    confidence: 83,
-
-    odds: 1.25,
-
-    bookingCode: "",
-
-    kickoff: "2026-09-13T14:00:00",
-
-    status: "published",
-  },
-
-  {
-    id: 39,
-
-    league: "Premier League",
-
-    homeTeam: "Manchester United",
-    awayTeam: "Manchester City",
-
-    homeLogo: clubLogos.ManchesterUnited,
-    awayLogo: clubLogos.ManchesterCity,
-
-    prediction: "BTTS",
-
     confidence: 81,
-
-    odds: 1.49,
-
+    odds: 1.30,
     bookingCode: "",
-
-    kickoff: "2026-09-13T16:30:00",
-
+    kickoff: "2026-10-10T15:00:00",
     status: "published",
   },
-
   {
-    id: 40,
-
+    id: 46,
     league: "Premier League",
-
-    homeTeam: "Leeds United",
-    awayTeam: "Newcastle United",
-
-    homeLogo: clubLogos.LeedsUnited,
-    awayLogo: clubLogos.NewcastleUnited,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 82,
-
-    odds: 1.25,
-
+    homeTeam: "Manchester United",
+    awayTeam: "Tottenham",
+    homeLogo: clubLogos.ManchesterUnited,
+    awayLogo: clubLogos.Tottenham,
+    prediction: "BTTS",
+    confidence: 77,
+    odds: 1.55,
     bookingCode: "",
-
-    kickoff: "2026-09-14T20:00:00",
-
+    kickoff: "2026-10-10T17:30:00",
+    status: "published",
+  },
+  {
+    id: 47,
+    league: "Premier League",
+    homeTeam: "Crystal Palace",
+    awayTeam: "Nottingham Forest",
+    homeLogo: clubLogos.CrystalPalace,
+    awayLogo: clubLogos.NottinghamForest,
+    prediction: "Over 1.5 Goals",
+    confidence: 74,
+    odds: 1.30,
+    bookingCode: "",
+    kickoff: "2026-10-11T14:00:00",
+    status: "published",
+  },
+  {
+    id: 48,
+    league: "Premier League",
+    homeTeam: "Hull City",
+    awayTeam: "Everton",
+    homeLogo: clubLogos.HullCity,
+    awayLogo: clubLogos.Everton,
+    prediction: "Away 1up",
+    confidence: 70,
+    odds: 1.60,
+    bookingCode: "",
+    kickoff: "2026-10-11T14:00:00",
+    status: "published",
+  },
+  {
+    id: 49,
+    league: "Premier League",
+    homeTeam: "Liverpool",
+    awayTeam: "Manchester City",
+    homeLogo: clubLogos.Liverpool,
+    awayLogo: clubLogos.ManchesterCity,
+    prediction: "BTTS",
+    confidence: 79,
+    odds: 1.55,
+    bookingCode: "",
+    kickoff: "2026-10-11T16:30:00",
+    status: "published",
+  },
+  {
+    id: 50,
+    league: "Premier League",
+    homeTeam: "Coventry",
+    awayTeam: "Newcastle United",
+    homeLogo: clubLogos.Coventry,
+    awayLogo: clubLogos.NewcastleUnited,
+    prediction: "Away 1up",
+    confidence: 85,
+    odds: 1.60,
+    bookingCode: "",
+    kickoff: "2026-10-12T20:00:00",
     status: "published",
   },
 ];

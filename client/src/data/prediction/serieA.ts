@@ -1,245 +1,146 @@
-import { clubLogos } from "../clubLogos";
 
+import { clubLogos } from "../clubLogos";
 import { PredictionMatch } from "./premierLeague";
 
 export const serieAPredictions: PredictionMatch[] = [
   {
     id: 331,
-
     league: "Serie A",
-
-    homeTeam: "Venezia",
+    homeTeam: "Genoa",
     awayTeam: "Fiorentina",
-
-    homeLogo: clubLogos.Venezia,
+    homeLogo: clubLogos.Genoa,
     awayLogo: clubLogos.Fiorentina,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 81,
-
-    odds: 1.36,
-
+    prediction: "BTTS",
+    confidence: 79,
+    odds: 1.85,
     bookingCode: "",
-
-    kickoff: "2026-09-11T20:45:00",
-
+    kickoff: "2026-10-10T15:00:00",
     status: "published",
   },
-
   {
     id: 332,
-
     league: "Serie A",
-
-    homeTeam: "Genoa",
-    awayTeam: "Frosinone",
-
-    homeLogo: clubLogos.Genoa,
-    awayLogo: clubLogos.Frosinine,
-
-    prediction: "OV 2.5goals",
-
-    confidence: 79,
-
-    odds: 1.89,
-
+    homeTeam: "Inter",
+    awayTeam: "Parma",
+    homeLogo: clubLogos.Inter,
+    awayLogo: clubLogos.Parma,
+    prediction: "Home Win",
+    confidence: 84,
+    odds: 1.20,
     bookingCode: "",
-
-    kickoff: "2026-09-12T15:00:00",
-
+    kickoff: "2026-10-10T18:00:00",
     status: "published",
   },
-
   {
     id: 333,
-
     league: "Serie A",
-
-    homeTeam: "Lazio",
-    awayTeam: "AC Milan",
-
-    homeLogo: clubLogos.Lazio,
-    awayLogo: clubLogos.Milan,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 84,
-
-    odds: 1.38,
-
+    homeTeam: "Napoli",
+    awayTeam: "Frosinone",
+    homeLogo: clubLogos.Napoli,
+    awayLogo: clubLogos.Frosinine,
+    prediction: "Home Win",
+    confidence: 85,
+    odds: 1.50,
     bookingCode: "",
-
-    kickoff: "2026-09-12T18:00:00",
-
+    kickoff: "2026-10-10T20:45:00",
     status: "published",
   },
-
   {
     id: 334,
-
     league: "Serie A",
-
-    homeTeam: "Atalanta",
-    awayTeam: "Cagliari",
-
-    homeLogo: clubLogos.Atalanta,
-    awayLogo: clubLogos.Cagliari,
-
-    prediction: "Home Win",
-
-    confidence: 85,
-
-    odds: 1.68,
-
+    homeTeam: "Como",
+    awayTeam: "Roma",
+    homeLogo: clubLogos.Como,
+    awayLogo: clubLogos.Roma,
+    prediction: "BTTS",
+    confidence: 74,
+    odds: 1.60,
     bookingCode: "",
-
-    kickoff: "2026-09-12T20:45:00",
-
+    kickoff: "2026-10-11T12:30:00",
     status: "published",
   },
-
   {
     id: 335,
-
     league: "Serie A",
-
-    homeTeam: "Lecce",
+    homeTeam: "Lazio",
     awayTeam: "Monza",
-
-    homeLogo: clubLogos.Lecce,
+    homeLogo: clubLogos.Lazio,
     awayLogo: clubLogos.Monza,
-
-    prediction: "OV 1.5 Goals",
-
-    confidence: 78,
-
-    odds: 1.43,
-
+    prediction: "Home Win",
+    confidence: 79,
+    odds: 1.65,
     bookingCode: "",
-
-    kickoff: "2026-09-13T15:00:00",
-
+    kickoff: "2026-10-11T15:00:00",
     status: "published",
   },
-
   {
     id: 336,
-
     league: "Serie A",
-
-    homeTeam: "Napoli",
+    homeTeam: "Lecce",
     awayTeam: "Bologna",
-
-    homeLogo: clubLogos.Napoli,
+    homeLogo: clubLogos.Lecce,
     awayLogo: clubLogos.Bologna,
-
-    prediction: "Home Win",
-
-    confidence: 86,
-
-    odds: 1.90,
-
+    prediction: "Away Win",
+    confidence: 72,
+    odds: 2.10,
     bookingCode: "",
-
-    kickoff: "2026-09-13T18:00:00",
-
+    kickoff: "2026-10-11T15:00:00",
     status: "published",
   },
-
   {
     id: 337,
-
     league: "Serie A",
-
     homeTeam: "Sassuolo",
-    awayTeam: "Juventus",
-
+    awayTeam: "AC Milan",
     homeLogo: clubLogos.Sassuolo,
-    awayLogo: clubLogos.Juventus,
-
-    prediction: "Away Win",
-
-    confidence: 84,
-
-    odds: 1.70,
-
+    awayLogo: clubLogos.Milan,
+    prediction: "Over 2.5 Goals",
+    confidence: 78,
+    odds: 1.75,
     bookingCode: "",
-
-    kickoff: "2026-09-13T20:45:00",
-
+    kickoff: "2026-10-11T18:00:00",
     status: "published",
   },
-
   {
     id: 338,
-
     league: "Serie A",
-
-    homeTeam: "Como",
-    awayTeam: "Parma",
-
-    homeLogo: clubLogos.Como,
-    awayLogo: clubLogos.Parma,
-
-    prediction: "OV 2.5",
-
+    homeTeam: "Cagliari",
+    awayTeam: "Juventus",
+    homeLogo: clubLogos.Cagliari,
+    awayLogo: clubLogos.Juventus,
+    prediction: "Away Win",
     confidence: 80,
-
-    odds: 1.65,
-
+    odds: 1.70,
     bookingCode: "",
-
-    kickoff: "2026-09-14T18:30:00",
-
+    kickoff: "2026-10-11T20:45:00",
     status: "published",
   },
-
   {
     id: 339,
-
     league: "Serie A",
-
-    homeTeam: "Torino",
-    awayTeam: "Roma",
-
-    homeLogo: clubLogos.Torino,
-    awayLogo: clubLogos.Roma,
-
-    prediction: "Roma Win",
-
-    confidence: 82,
-
-    odds: 1.62,
-
+    homeTeam: "Atalanta",
+    awayTeam: "Venezia",
+    homeLogo: clubLogos.Atalanta,
+    awayLogo: clubLogos.Venezia,
+    prediction: "Home Win",
+    confidence: 83,
+    odds: 1.60,
     bookingCode: "",
-
-    kickoff: "2026-09-14T18:30:00",
-
+    kickoff: "2026-10-12T18:30:00",
     status: "published",
   },
-
   {
     id: 340,
-
     league: "Serie A",
-
-    homeTeam: "Inter",
+    homeTeam: "Torino",
     awayTeam: "Udinese",
-
-    homeLogo: clubLogos.Inter,
+    homeLogo: clubLogos.Torino,
     awayLogo: clubLogos.Udinese,
-
-    prediction: "OV 2.5 ",
-
-    confidence: 88,
-
-    odds: 1.51,
-
+    prediction: "Over 1.5 Goals",
+    confidence: 75,
+    odds: 1.35,
     bookingCode: "",
-
-    kickoff: "2026-09-14T20:45:00",
-
+    kickoff: "2026-10-12T20:45:00",
     status: "published",
   },
 ];
