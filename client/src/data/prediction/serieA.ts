@@ -53,7 +53,7 @@ export const serieAPredictions: PredictionMatch[] = [
     homeLogo: clubLogos.Como,
     awayLogo: clubLogos.Roma,
     prediction: "BTTS",
-    confidence: 74,
+    confidence: 79,
     odds: 1.60,
     bookingCode: "",
     kickoff: "2026-10-11T12:30:00",

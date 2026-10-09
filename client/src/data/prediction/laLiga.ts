@@ -10,7 +10,7 @@ export const laLigaPredictions: PredictionMatch[] = [
     homeLogo: clubLogos.Malaga,
     awayLogo: clubLogos.Espanyol,
     prediction: "Away Over 0.5 Goals",
-    confidence: 74,
+    confidence: 78,
     odds: 1.35,
     bookingCode: "",
     kickoff: "2026-10-09T21:00:00",
