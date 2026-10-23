@@ -15,6 +15,10 @@ export interface PredictionMatch {
 
   homeTeam: string;
 
+  homeTeamId?: number;
+  awayTeamId?: number;
+
+
   awayTeam: string;
 
   homeLogo: string;

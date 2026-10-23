@@ -260,4 +260,54 @@ export const clubLogos = {
 
     Strasbourg:
       "/clubs/ligue1/strasbourg.png",
-  };
+
+
+
+// UEFA Champions League clubs
+AEKAthens:
+  "/clubs/champs/aek-athens.png",
+
+
+BodoGlimt:
+  "/clubs/champs/bodo-glimt.png",
+
+ClubBrugge:
+  "/clubs/champs/club-brugge.png",
+
+
+
+Fenerbahce:
+  "/clubs/champs/fenerbahce.png",
+
+Feyenoord:
+  "/clubs/champs/feyenoord.png",
+
+Galatasaray:
+  "/clubs/champs/galatasaray.png",
+
+
+LASK:
+  "/clubs/champs/lask.png",
+
+Porto:
+  "/clubs/champs/porto.png",
+
+PSV:
+  "/clubs/champs/psv.png",
+
+Sabah:
+  "/clubs/champs/sabah.png",
+
+ShakhtarDonetsk:
+  "/clubs/champs/shakhtar-donetsk.png",
+
+SlaviaPrague:
+  "/clubs/champs/slavia-prague.png",
+
+SlovanBratislava:
+  "/clubs/champs/slovan-bratislava.png",
+
+SportingCP:
+  "/clubs/champs/sporting-cp.png",
+
+}
